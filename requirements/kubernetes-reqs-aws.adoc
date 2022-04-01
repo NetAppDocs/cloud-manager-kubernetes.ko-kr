@@ -1,0 +1,209 @@
+---
+sidebar: sidebar 
+permalink: /requirements/kubernetes-reqs-aws.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, aws 
+summary: 'Cloud Manager에 Amazon EKS(Amazon Elastic Kubernetes Service) 클러스터를 추가하려면 먼저 다음 요구사항이 충족되는지 확인해야 합니다.' 
+---
+= AWS의 Kubernetes 클러스터 요구사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AWS에서 관리되는 Amazon EKS(Elastic Kubernetes Service) 클러스터 또는 자체 관리되는 Kubernetes 클러스터를 Cloud Manager에 추가할 수 있습니다. 클러스터를 Cloud Manager에 추가하려면 먼저 다음 요구사항을 충족해야 합니다.
+
+이 항목에서는 EKS 및 자체 관리 Kubernetes 클러스터에 대한 구성이 동일한 _Kubernetes 클러스터를 사용합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.
+
+
+
+== 요구 사항
+
+아스트라 트리덴트:: Kubernetes 클러스터에 NetApp Astra Trident가 설치되어 있어야 합니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["설치 단계는 Astra Trident 문서로 이동합니다"^].
+Cloud Volumes ONTAP:: Cloud Volumes ONTAP for AWS는 클러스터를 위한 백엔드 스토리지로 설정해야 합니다. https://docs.netapp.com/us-en/trident/trident-use/backends.html["구성 단계를 보려면 Astra Trident 문서로 이동합니다"^].
+Cloud Manager 커넥터:: 필요한 권한이 있는 Connector가 AWS에서 실행되고 있어야 합니다. <<Prepare a Connector,아래에서 자세히 알아보십시오>>.
+네트워크 연결:: Kubernetes 클러스터와 Connector 간, Kubernetes 클러스터와 Cloud Volumes ONTAP 사이에 네트워크 연결이 필요합니다. <<Review networking requirements,아래에서 자세히 알아보십시오>>.
+RBAC 인증:: Cloud Manager Connector 역할은 각 Kubernetes 클러스터에서 승인되어야 합니다. <<Set up RBAC authorization,아래에서 자세히 알아보십시오>>.
+
+
+
+
+== 커넥터를 준비합니다
+
+Kubernetes 클러스터를 검색하고 관리하려면 AWS에 Cloud Manager Connector가 필요합니다. 새 Connector를 만들거나 필요한 권한이 있는 기존 Connector를 사용해야 합니다.
+
+
+
+=== 새 커넥터를 작성합니다
+
+아래 링크 중 하나에 있는 단계를 따르십시오.
+
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html["Cloud Manager에서 커넥터를 생성합니다"^] (권장)
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-launching-aws-mktp.html["AWS Marketplace에서 Connector를 생성합니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html["AWS의 기존 Linux 호스트에 커넥터를 설치합니다"^]
+
+
+
+
+=== 기존 Connector에 필요한 권한을 추가합니다
+
+3.9.13 릴리스부터 _NEWED_DEPLOY 커넥터에는 Kubernetes 클러스터의 검색 및 관리를 지원하는 세 가지 새로운 AWS 권한이 포함되어 있습니다. 이 릴리스 전에 Connector를 생성한 경우, Connector의 IAM 역할에 대한 기존 정책을 수정하여 권한을 제공해야 합니다.
+
+.단계
+. AWS 콘솔로 이동하여 EC2 서비스를 엽니다.
+. Connector 인스턴스를 선택하고 * Security * 를 클릭한 다음 IAM 역할의 이름을 클릭하여 IAM 서비스의 역할을 확인합니다.
++
+image:screenshot-aws-iam-role.png["보안 탭에서 IAM 역할의 이름을 보여 주는 AWS 콘솔 스크린샷"]
+
+. 사용 권한 * 탭에서 정책을 확장하고 * 정책 편집 * 을 클릭합니다.
++
+image:../media/screenshot-aws-edit-policy.png["권한 탭의 정책 편집 버튼을 보여 주는 AWS 콘솔 스크린샷"]
+
+. JSON * 을 클릭하고 첫 번째 작업 세트에서 다음 권한을 추가합니다.
++
+[source, json]
+----
+"eks:ListClusters",
+"eks:DescribeCluster,"
+"iam:GetInstanceProfile"
+----
++
+https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.13.json["정책의 전체 JSON 형식을 봅니다"^].
+
+. 정책 검토 * 를 클릭한 다음 * 변경 사항 저장 * 을 클릭합니다.
+
+
+
+
+== 네트워킹 요구 사항을 검토합니다
+
+Kubernetes 클러스터와 Connector 간, Kubernetes 클러스터와 클러스터에 백엔드 스토리지를 제공하는 Cloud Volumes ONTAP 시스템 간에 네트워크 연결을 제공해야 합니다.
+
+* 각 Kubernetes 클러스터에는 Connector로부터 인바운드 연결이 있어야 합니다
+* Connector는 포트 443을 통해 각 Kubernetes 클러스터에 대한 아웃바운드 연결을 가지고 있어야 합니다
+
+
+이 연결을 제공하는 가장 간단한 방법은 Kubernetes 클러스터와 같은 VPC에 Connector와 Cloud Volumes ONTAP를 구축하는 것입니다. 그렇지 않으면 다른 VPC 간에 VPC 피어링 연결을 설정해야 합니다.
+
+다음은 동일한 VPC의 각 구성 요소를 보여 주는 예입니다.
+
+image:diagram-kubernetes-eks.png["EKS Kubernetes 클러스터 및 동일한 VPC의 커넥터 및 Cloud Volumes ONTAP에 대한 연결 아키텍처의 다이어그램"]
+
+이 또 다른 예는 다른 VPC에서 실행되는 EKS 클러스터를 보여 줍니다. 이 예에서 VPC 피어링은 EKS 클러스터용 VPC와 커넥터 및 Cloud Volumes ONTAP용 VPC 간에 연결을 제공합니다.
+
+image:diagram_kubernetes.png["EKS Kubernetes 클러스터 및 별도의 VPC에서 커넥터 및 Cloud Volumes ONTAP에 대한 연결 아키텍처의 다이어그램"]
+
+
+
+== RBAC 승인을 설정합니다
+
+Connector가 클러스터를 검색 및 관리할 수 있도록 각 Kubernetes 클러스터에서 Connector 역할을 승인해야 합니다.
+
+.단계
+. 클러스터 역할 및 역할 바인딩을 생성합니다.
++
+.. 다음 텍스트가 포함된 YAML 파일을 생성합니다.
++
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+      verbs:
+          - get
+          - list
+          - create
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+      verbs:
+          - get
+          - list
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: Group
+      name: cloudmanager-access-group
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+----
+.. 클러스터에 구성을 적용합니다.
++
+[source, kubectl]
+----
+kubectl apply -f <file-name>
+----
+
+
+. 권한 그룹에 대한 ID 매핑을 만듭니다.
++
+[role="tabbed-block"]
+====
+.eksctl을 사용합니다
+--
+eksctl을 사용하여 클러스터와 Cloud Manager Connector의 IAM 역할 사이에 IAM ID 매핑을 생성합니다.
+
+https://eksctl.io/usage/iam-identity-mappings/["전체 지침은 eksctl 설명서를 참조하십시오"^].
+
+아래에 예가 나와 있습니다.
+
+[source, eksctl]
+----
+eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --arn <ARN of the Connector IAM role> --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}
+----
+--
+.AWS-auth를 편집합니다
+--
+AWS-auth ConfigMap을 직접 편집하여 RBAC 액세스를 Cloud Manager Connector의 IAM 역할에 추가합니다.
+
+https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html["전체 지침은 AWS EKS 설명서를 참조하십시오"^].
+
+아래에 예가 나와 있습니다.
+
+[source, yaml]
+----
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: <ARN of the Connector IAM role>
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c
+----
+--
+====
+

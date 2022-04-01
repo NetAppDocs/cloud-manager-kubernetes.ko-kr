@@ -1,0 +1,15 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Add your managed-Kubernetes clusters to Cloud Manager for advanced data management. 
+summary: 고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes 클러스터를 추가하십시오. 
+---
+= Kubernetes 문서
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

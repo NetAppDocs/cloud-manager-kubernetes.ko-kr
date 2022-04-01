@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: Cloud Manager의 Kubernetes 새 기능에 대해 알아보십시오. 
+---
+= Cloud Manager의 Kubernetes의 새로운 기능
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager의 Kubernetes 새 기능에 대해 알아보십시오.
+
+
+
+== 2022년 2월 27일
+
+
+
+=== Google Cloud에서 Kubernetes 클러스터 지원
+
+이제 Cloud Manager를 사용하여 Google Cloud에서 관리되는 GKE(Google Kubernetes Engine) 클러스터와 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다.
+
+link:kubernetes-reqs-gke.html["Google Cloud에서 Kubernetes 클러스터를 시작하는 방법을 알아보십시오"].
+
+
+
+== 2022년 1월 11일
+
+
+
+=== Azure에서 Kubernetes 클러스터 지원
+
+이제 Cloud Manager를 사용하여 Azure에서 관리되는 Azure Kubernetes 클러스터(AKS) 및 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다.
+
+link:kubernetes-reqs-aks.html["Azure에서 Kubernetes 클러스터 시작"]
+
+
+
+== 2021년 11월 28일
+
+
+
+=== AWS의 Kubernetes 클러스터 지원
+
+이제 고급 데이터 관리를 위해 Cloud Manager의 Canvas에 관리되는 Kubernetes 클러스터를 추가할 수 있습니다.
+
+* Amazon EKS 클러스터를 찾아보십시오
+* Cloud Backup을 사용하여 영구 볼륨을 백업합니다
+
+
+link:concept-kubernetes.html["Kubernetes 지원에 대해 자세히 알아보십시오"].
+
+
+TIP: 기존 Kubernetes 서비스(* K8s* 탭을 통해 사용 가능)는 더 이상 사용되지 않으며 향후 릴리즈에서 제거될 예정입니다.
