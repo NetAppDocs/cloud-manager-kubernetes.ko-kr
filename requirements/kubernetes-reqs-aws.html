@@ -45,11 +45,13 @@
   <link rel="stylesheet" href='/ko-kr/cloud-manager-kubernetes/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/ko-kr/cloud-manager-kubernetes/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/cloud-manager-kubernetes/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-manager-kubernetes/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/cloud-manager-kubernetes/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/ko-kr/cloud-manager-kubernetes/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/cloud-manager-kubernetes/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
   <link rel='stylesheet' href='/ko-kr/cloud-manager-kubernetes/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
@@ -131,7 +133,7 @@
     gtag('config', 'UA-81697994-3');
   }
   </script>
-  <script src='/ko-kr/cloud-manager-kubernetes/js/version-dropdown.js'></script>
+  <script src='/ko-kr/cloud-manager-kubernetes/js/custom-dropdown.js'></script>
   <script src='/ko-kr/cloud-manager-kubernetes/js/FileSaver.min.js'></script>
   <script src='/ko-kr/cloud-manager-kubernetes/js/jszip-utils.min.js'></script>
   <script src='/ko-kr/cloud-manager-kubernetes/js/jszip.min.js'></script>
@@ -139,16 +141,14 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"  >
       <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-kubernetes/issues/new?body=Page%3A%20[AWS의 Kubernetes 클러스터 요구사항](https://docs.netapp.com/ko-kr/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-manager-kubernetes/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
       <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-kubernetes/blob/main/requirements/kubernetes-reqs-aws.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-manager-kubernetes/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/cloud-manager-kubernetes/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
@@ -245,7 +245,8 @@
           data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
           data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
           data-results-found="{hitCount}개의 결과를 찾음"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -334,6 +335,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/ko-kr/cloud-manager-kubernetes/pdfs/fullsite-sidebar/Kubernetes_문서.pdf" >
           <img src="/ko-kr/cloud-manager-kubernetes/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
 
@@ -346,6 +350,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/cloud-manager-kubernetes/pdfs/sidebar/시작하십시오.pdf" 
@@ -355,6 +362,8 @@
             시작하십시오
           </a>
           
+
+
 
 
 
@@ -370,6 +379,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/cloud-manager-kubernetes/pdfs/sidebar/요구_사항.pdf" 
@@ -407,6 +419,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/cloud-manager-kubernetes/pdfs/sidebar/Kubernetes_클러스터_추가.pdf" 
@@ -432,11 +447,47 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-manager-kubernetes/pdfs/sidebar/Kubernetes_클러스터_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-manager-kubernetes/images/pdf.png" width="16" height="16"/>
+            Kubernetes 클러스터 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/cloud-manager-kubernetes/pdfs/sidebar/지식_및_지원.pdf" 
@@ -509,6 +560,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/concept-kubernetes.html">
         Kubernetes 데이터 관리에 대해 자세히 알아보십시오
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task-k8s-quick-start.html">
+        빠른 시작
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 요구 사항</div>
       </a>
@@ -527,9 +580,20 @@
         Azure에서 클러스터 추가
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html">
         Google Cloud에서 클러스터를 추가합니다
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">
-        Kubernetes 클러스터에서 데이터 서비스 지원
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/cloud-manager-kubernetes/concept-manage-k8s.html">
+        <div class="na-navbar-padding"> Kubernetes 클러스터 관리</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-k8s-manage-trident.html">
+        Astra Trident를 설치합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html">
+        스토리지 클래스를 관리합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html">
+        영구 볼륨 보기
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html">
+        클러스터를 제거합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">
+        NetApp 클라우드 데이터 서비스 지원
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 지식 및 지원</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-kubernetes/support/task-support-registration.html">
@@ -549,6 +613,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+
 
   </div>
   
@@ -598,7 +663,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-04 14:15:56 +0000">04/04/2022</time>
+    <time datetime="2022-04-04 21:07:09 +0000">04/04/2022</time>
     
   
 
@@ -622,8 +687,15 @@
 <dl>
 <dt class="hdlist1">아스트라 트리덴트</dt>
 <dd>
-<p>Kubernetes 클러스터에 NetApp Astra Trident가 설치되어 있어야 합니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다. <a href="https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html" target="_blank" rel="noopener">"설치 단계는 Astra Trident 문서로 이동합니다"</a>.</p>
+<p>Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <a href="https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html" target="_blank" rel="noopener">"사전 요구 사항을 검토합니다"</a> Astra Trident를 설치하기 전</p>
 </dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Astra Trident를 업그레이드하려면 <a href="https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html" target="_blank" rel="noopener">"운영자와 함께 업그레이드하십시오"</a>.</p>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Cloud Volumes ONTAP</dt>
 <dd>
 <p>Cloud Volumes ONTAP for AWS는 클러스터를 위한 백엔드 스토리지로 설정해야 합니다. <a href="https://docs.netapp.com/us-en/trident/trident-use/backends.html" target="_blank" rel="noopener">"구성 단계를 보려면 Astra Trident 문서로 이동합니다"</a>.</p>
@@ -658,13 +730,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html" target="_blank" rel="noopener">"Cloud Manager에서 커넥터를 생성합니다"</a> (권장)</p>
+<p><a href="task_creating_connectors_aws.html">"Cloud Manager에서 커넥터를 생성합니다"</a> (권장)</p>
 </li>
 <li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html" target="_blank" rel="noopener">"AWS Marketplace에서 Connector를 생성합니다"</a></p>
+<p><a href="task_launching_aws_mktp.html">"AWS Marketplace에서 Connector를 생성합니다"</a></p>
 </li>
 <li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"AWS의 기존 Linux 호스트에 커넥터를 설치합니다"</a></p>
+<p><a href="task_installing_linux.html">"AWS의 기존 Linux 호스트에 커넥터를 설치합니다"</a></p>
 </li>
 </ul>
 </div>
@@ -752,6 +824,41 @@
 <div class="paragraph">
 <p>Connector가 클러스터를 검색 및 관리할 수 있도록 각 Kubernetes 클러스터에서 Connector 역할을 승인해야 합니다.</p>
 </div>
+<div class="paragraph">
+<p>다른 기능을 사용하려면 다른 권한이 필요합니다.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">백업 및 복원</dt>
+<dd>
+<p>백업 및 복원에는 기본 인증만 필요합니다.</p>
+</dd>
+<dt class="hdlist1">스토리지 클래스를 추가합니다</dt>
+<dd>
+<p>Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장된 인증이 필요합니다.</p>
+</dd>
+<dt class="hdlist1">Astra 트리덴트 설치</dt>
+<dd>
+<p>Astra Trident를 설치하려면 Cloud Manager에 대한 전체 인증을 제공해야 합니다.</p>
+<div class="openblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-kubernetes/images/note.svg" alt="참고">
+</td>
+<td class="content">
+Astra Trident를 설치할 때 Cloud Manager는 Astra Trident와 스토리지 클러스터와 통신하는 데 필요한 자격 증명이 포함된 Astra Trident 백엔드 및 Kubernetes 암호를 설치합니다.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
 <div class="olist arabic">
 <div class="title">단계</div>
 <ol class="arabic">
@@ -760,7 +867,15 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>다음 텍스트가 포함된 YAML 파일을 생성합니다.</p>
+<p>귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다.</p>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">백업/복원</div>
+<div class="content">
+<div class="paragraph">
+<p>Kubernetes 클러스터의 백업 및 복원을 위한 기본 인증을 추가하십시오.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: rbac.authorization.k8s.io/v1
@@ -771,12 +886,28 @@ rules:
     - apiGroups:
           - ''
       resources:
-          - secrets
           - namespaces
-          - persistentvolumeclaims
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
           - persistentvolumes
       verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
           - get
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
           - list
           - create
     - apiGroups:
@@ -784,16 +915,19 @@ rules:
       resources:
           - storageclasses
       verbs:
-          - get
           - list
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentbackends
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
           - tridentorchestrators
       verbs:
           - get
-          - list
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -809,6 +943,88 @@ roleRef:
     apiGroup: rbac.authorization.k8s.io</code></pre>
 </div>
 </div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">스토리지 클래스</div>
+<div class="content">
+<div class="paragraph">
+<p>Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장 인증을 추가합니다.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - create
+          - delete
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - create
+          - list
+          - delete
+          - patch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+          - tridentbackendconfigs
+      verbs:
+          - get
+          - list
+          - create
+          - delete
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: Group
+      name: cloudmanager-access-group
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Trident를 설치합니다</div>
+<div class="content">
+<div class="paragraph">
+<p>명령줄을 사용하여 전체 인증을 제공하고 Cloud Manager에서 Astra Trident를 설치할 수 있도록 합니다.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">eksctl create iamidentitymapping --cluster &lt; &gt; --region &lt; &gt; --arn &lt; &gt; --group "system:masters" --username system:node:{{EC2PrivateDNSName}}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>클러스터에 구성을 적용합니다.</p>
@@ -822,62 +1038,14 @@ roleRef:
 </div>
 </li>
 <li>
-<p>권한 그룹에 대한 ID 매핑을 만듭니다.</p>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">eksctl을 사용합니다</div>
-<div class="content">
-<div class="paragraph">
-<p>eksctl을 사용하여 클러스터와 Cloud Manager Connector의 IAM 역할 사이에 IAM ID 매핑을 생성합니다.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">"전체 지침은 eksctl 설명서를 참조하십시오"</a>.</p>
-</div>
-<div class="paragraph">
-<p>아래에 예가 나와 있습니다.</p>
-</div>
+<p>eksctl을 사용하여 권한 그룹에 대한 ID 매핑을 만듭니다. 아래에 예가 나와 있습니다.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-eksctl" data-lang="eksctl">eksctl create iamidentitymapping --cluster &lt;eksCluster&gt; --region &lt;us-east-2&gt; --arn &lt;ARN of the Connector IAM role&gt; --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}</code></pre>
 </div>
 </div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">AWS-auth를 편집합니다</div>
-<div class="content">
 <div class="paragraph">
-<p>AWS-auth ConfigMap을 직접 편집하여 RBAC 액세스를 Cloud Manager Connector의 IAM 역할에 추가합니다.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html" target="_blank" rel="noopener">"전체 지침은 AWS EKS 설명서를 참조하십시오"</a>.</p>
-</div>
-<div class="paragraph">
-<p>아래에 예가 나와 있습니다.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: v1
-data:
-  mapRoles: |
-    - groups:
-      - cloudmanager-access-group
-      rolearn: &lt;ARN of the Connector IAM role&gt;
-     username: system:node:{{EC2PrivateDNSName}}
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2021-09-30T21:09:18Z"
-  name: aws-auth
-  namespace: kube-system
-  resourceVersion: "1021"
-  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: dcc31de5-3838-11e8-af26-02e00430057c</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">"전체 지침은 eksctl 설명서를 참조하십시오"</a>.</p>
 </div>
 </li>
 </ol>
@@ -991,10 +1159,7 @@ metadata:
 </div>
 </footer>
 
-      </div><!-- Elasticsearch JS -->
-      <script type="text/javascript" src='/ko-kr/cloud-manager-kubernetes/js/bundle.js'></script>
-
-      <!-- Syntax Highlighting -->
+      </div><!-- Elasticsearch JS --><script type="text/javascript" src='/ko-kr/cloud-manager-kubernetes/js/bundle.js'></script><!-- Syntax Highlighting -->
       <script type="text/javascript" src='/ko-kr/cloud-manager-kubernetes/js/prism.js'></script>
       <script type="text/javascript" src='/ko-kr/cloud-manager-kubernetes/js/prism-curl.js'></script>
     </div>
