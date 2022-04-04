@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-persistent-volumes.html 
+keywords: kubernetes, k8s, view persistent volume 
+summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 연결된 영구 볼륨을 볼 수 있습니다. 
+---
+= 영구 볼륨 보기
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 영구 볼륨을 볼 수 있습니다.
+
+.단계
+. Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.
+. 개요 * 탭에서 * 볼륨 보기 * 를 클릭하거나 * 영구 볼륨 * 탭을 클릭합니다. 영구 볼륨이 구성되지 않은 경우 를 참조하십시오 link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html["프로비저닝"^] Astra Trident에서 볼륨을 프로비저닝하는 방법에 대한 자세한 내용은
+
+
+구성된 영구 볼륨의 테이블이 표시됩니다.
+
+image:screenshot-k8s-volume-table.png["영구 볼륨 표의 스크린샷."]

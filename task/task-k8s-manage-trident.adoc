@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-trident.html 
+keywords: kubernetes, k8s, install astra trident, kubernetes support 
+summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 호환되는 Astra Trident 설치를 확인하거나 Astra Trident를 설치할 수 있습니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다. 
+---
+= Astra Trident를 설치합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 호환되는 Astra Trident 설치를 확인하거나 Astra Trident를 설치할 수 있습니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다.
+
+Astra Trident에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident 문서"].
+
+
+NOTE: Astra Trident가 설치되지 않았거나 호환되지 않는 버전의 Astra Trident가 설치된 경우 클러스터에 필요한 조치가 표시됩니다.
+
+.단계
+. Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.
++
+.. Astra Trident가 설치되지 않은 경우 * Install Trident * 를 클릭합니다.
++
+image:screenshot-k8s-install-trident.png["Astra Trident가 설치되지 않은 K8s 리소스 페이지 스크린샷과 Astra Trident를 설치하는 단추."]
+
+.. Astra Trident의 백 레벨 버전이 설치된 경우 https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-trident.html["업그레이드 단계는 Astra Trident 문서로 이동합니다"^].
++
+image:screenshot-k8s-upgrade-trident.png["Astra Trident 업그레이드 프로세스 스크린샷."]
+
+
+
+
+
+Astra Trident의 최신 버전이 설치되어 있습니다. 이제 스토리지 클래스를 추가할 수 있습니다.

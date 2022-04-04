@@ -19,6 +19,8 @@ sidebar:
     entries:
     - title: Kubernetes 데이터 관리에 대해 자세히 알아보십시오
       url: "/concept-kubernetes.html"
+    - title: 빠른 시작
+      url: "/task-k8s-quick-start.html"
   - title: 요구 사항
     entries:
     - title: AWS 기반 Kubernetes 클러스터
@@ -35,8 +37,19 @@ sidebar:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud에서 클러스터를 추가합니다
       url: "/task/task-kubernetes-discover-gke.html"
-  - title: Kubernetes 클러스터에서 데이터 서비스 지원
-    url: "/task/task-kubernetes-enable-services.html"
+  - title: Kubernetes 클러스터 관리
+    url: "/concept-manage-k8s.html"
+    entries:
+    - title: Astra Trident를 설치합니다
+      url: "/task/task-k8s-manage-trident.html"
+    - title: 스토리지 클래스를 관리합니다
+      url: "/task/task-k8s-manage-storage-classes.html"
+    - title: 영구 볼륨 보기
+      url: "/task/task-k8s-manage-persistent-volumes.html"
+    - title: 클러스터를 제거합니다
+      url: "/task/task-k8s-manage-remove-cluster.html"
+    - title: NetApp 클라우드 데이터 서비스 지원
+      url: "/task/task-kubernetes-enable-services.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
@@ -53,6 +66,8 @@ homepage:
       url: "/whats-new.html"
     - title: Kubernetes 데이터 관리에 대해 자세히 알아보십시오
       url: "/concept-kubernetes.html"
+    - title: 빠른 시작
+      url: "/task-k8s-quick-start.html"
   - title: 요구 사항
     links:
     - title: AWS 기반 Kubernetes 클러스터
@@ -69,8 +84,16 @@ homepage:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud에서 클러스터를 추가합니다
       url: "/task/task-kubernetes-discover-gke.html"
-  - title: 데이터 서비스 지원
+  - title: Kubernetes 클러스터 관리
     links:
+    - title: Astra Trident를 설치합니다
+      url: "/task-k8s-manage-trident.html"
+    - title: 스토리지 클래스를 관리합니다
+      url: "/task-k8s-manage-storage-classes.html"
+    - title: 영구 볼륨 보기
+      url: "/task-k8s-manage-persistent-volumes.html"
+    - title: 클러스터를 제거합니다
+      url: "/task-k8s-manage-remove-cluster.html"
     - title: 데이터 서비스 지원
       url: "/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager에 대한 지원을 받으십시오

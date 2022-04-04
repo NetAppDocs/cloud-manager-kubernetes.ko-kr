@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-remove-cluster.html 
+keywords: kubernetes, k8s, remove cluster 
+summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 작업 공간에서 클러스터를 제거할 수 있습니다. 
+---
+= 작업 공간에서 Kubernetes 클러스터를 제거합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 작업 공간에서 클러스터를 제거할 수 있습니다.
+
+.단계
+. Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.
+. 페이지 오른쪽 상단에서 작업 메뉴를 선택하고 * 작업 영역에서 제거 * 를 클릭합니다.
++
+image:screenshot-k8s-remove-cluster.png["작업 공간에서 Kubernetes 클러스터를 제거하는 메뉴를 보여 주는 스크린샷"]
+
+. Remove * 를 클릭하여 작업 공간에서 클러스터 제거를 확인합니다. 언제든지 이 클러스터를 다시 검색할 수 있습니다.
++
+image:screenshot-k8s-confirm-remove-cluster.png["작업 공간에서 Kubernetes 클러스터 제거를 확인하는 페이지의 스크린샷"]
+
+
+
+Kubernetes 클러스터가 작업 공간에서 제거되어 Canvas에 더 이상 표시되지 않습니다.

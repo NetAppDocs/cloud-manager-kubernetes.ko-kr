@@ -20,15 +20,10 @@
   <block id="d5f64dd836c164f17e32528a31fdeea5" category="inline-link-macro">Kubernetes 지원에 대해 자세히 알아보십시오</block>
   <block id="541ec813f320b6a90ccb3d382d774f7e" category="paragraph"><block ref="b46c52759a0e98b71be9f6aed99e1b0c" category="inline-link-macro-rx"></block>.</block>
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">기존 Kubernetes 서비스(* K8s* 탭을 통해 사용 가능)는 더 이상 사용되지 않으며 향후 릴리즈에서 제거될 예정입니다.</block>
-  <block id="ccbd79a5bcab3e453f949ff4117b4275" category="summary">고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes 클러스터 추가</block>
-  <block id="4f64237bee72bb58ff4152fa48632885" category="doc">Kubernetes 개요</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
-  <block id="c5ec1386b558adcf3d52ae94e379e003" category="list-text">클러스터를 Canvas에 추가하여 하이브리드 클라우드 인프라의 일부로 보고 관리할 수 있습니다</block>
-  <block id="e93ee6ce2f667e494d48b99fc2c22728" category="list-text">Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷</block>
   <block id="fdd5390b518e6b0ee63a9f6d25352e4d" category="paragraph"><block ref="fdd5390b518e6b0ee63a9f6d25352e4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="acb13b8754d0f14e58090cb4826d589f" category="section-title">지원되는 Kubernetes 구축</block>
-  <block id="6b7bfea0bd3da9dc242cb6bfd1641da6" category="paragraph">Cloud Manager는 Amazon Elastic Kubernetes Service(Amazon EKS) 및 Microsoft Azure Kubernetes Service(AKS)에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">백엔드 스토리지를 지원합니다</block>
   <block id="55a560dfd687efd2106430144cfa5892" category="paragraph">NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
@@ -39,8 +34,6 @@
   <block id="f56b205821b231a157cc0e3315bc72a6" category="paragraph">이 항목에서는 EKS 및 자체 관리 Kubernetes 클러스터에 대한 구성이 동일한 _Kubernetes 클러스터를 사용합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">요구 사항</block>
   <block id="086e6c16e3fe8e13c336612ef636aa02" category="list-text">아스트라 트리덴트</block>
-  <block id="b6edb134a14ab126456a8cf8495987f9" category="inline-link">설치 단계는 Astra Trident 문서로 이동합니다</block>
-  <block id="f71e85a659608075f0509b9338ee77b6" category="list-text">Kubernetes 클러스터에 NetApp Astra Trident가 설치되어 있어야 합니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다.<block ref="96de5dd22941483be2f5e4e573125fc9" category="inline-link-rx"></block>.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="f42c4f194d4364b14558c35f61d5d363" category="inline-link">구성 단계를 보려면 Astra Trident 문서로 이동합니다</block>
   <block id="acc4a07cbf9763718c5eb67fd34340d7" category="list-text">Cloud Volumes ONTAP for AWS는 클러스터를 위한 백엔드 스토리지로 설정해야 합니다.<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>.</block>
@@ -67,7 +60,6 @@
   <block id="443963254a1729321efbfdbd4e2396c8" category="paragraph"><block ref="443963254a1729321efbfdbd4e2396c8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59524cf8612a689e4d9ed61067454937" category="list-text">사용 권한 * 탭에서 정책을 확장하고 * 정책 편집 * 을 클릭합니다.</block>
   <block id="4b1c304f38c097ba7776b76e4e099d42" category="inline-image-macro">권한 탭의 정책 편집 버튼을 보여 주는 AWS 콘솔 스크린샷</block>
-  <block id="845120e36ff1372b9be0014ef85d5ae6" category="paragraph"><block ref="845120e36ff1372b9be0014ef85d5ae6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f96de5b5f8572ecb3c2c80e8156181f8" category="list-text">JSON * 을 클릭하고 첫 번째 작업 세트에서 다음 권한을 추가합니다.</block>
   <block id="e72ae7637ee4c3c3135530cf7abf3ea9" category="inline-link">정책의 전체 JSON 형식을 봅니다</block>
   <block id="377d2375cdf41d8fe094ff8bcedcb12b" category="paragraph"><block ref="8eeee6ade5612bec522e249ee65dc7db" category="inline-link-rx"></block>.</block>
@@ -86,24 +78,13 @@
   <block id="b9940ca80ae2598fdb5c6c402f1f1dc1" category="section-title">RBAC 승인을 설정합니다</block>
   <block id="3af3ead39a5eec5783d926f19a9b6bfe" category="paragraph">Connector가 클러스터를 검색 및 관리할 수 있도록 각 Kubernetes 클러스터에서 Connector 역할을 승인해야 합니다.</block>
   <block id="33ebb2dacbde969dd24700b6e4dbe435" category="list-text">클러스터 역할 및 역할 바인딩을 생성합니다.</block>
-  <block id="220a9a1f63ae55426c0a1d2072d313ac" category="list-text">다음 텍스트가 포함된 YAML 파일을 생성합니다.</block>
   <block id="26b09dacbaf5084bbe92bfa4d75feba8" category="list-text">클러스터에 구성을 적용합니다.</block>
-  <block id="f08cfbb10dc9216a72c9d59da3c626b8" category="list-text">권한 그룹에 대한 ID 매핑을 만듭니다.</block>
-  <block id="bcac99b7c9956d05f17a4e4f9649da71" category="open-title">eksctl을 사용합니다</block>
-  <block id="f7e12246f1ebd24c7f1a6460919e9bd3" category="paragraph">eksctl을 사용하여 클러스터와 Cloud Manager Connector의 IAM 역할 사이에 IAM ID 매핑을 생성합니다.</block>
   <block id="836c1d30babd0339206570a66bcbb4f3" category="inline-link">전체 지침은 eksctl 설명서를 참조하십시오</block>
   <block id="1e37bf365a6041e37e34936645ebc0a8" category="paragraph"><block ref="1119b51b5b352ff18c686869eb8e6d24" category="inline-link-rx"></block>.</block>
-  <block id="13225b5885ac45d1b5d3019c9de2e513" category="paragraph">아래에 예가 나와 있습니다.</block>
-  <block id="a36cee8f656cd9e61ae5593885084071" category="open-title">AWS-auth를 편집합니다</block>
-  <block id="de4e940a00cd2a48720f3f12fb53e9a7" category="paragraph">AWS-auth ConfigMap을 직접 편집하여 RBAC 액세스를 Cloud Manager Connector의 IAM 역할에 추가합니다.</block>
-  <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">전체 지침은 AWS EKS 설명서를 참조하십시오</block>
-  <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>.</block>
   <block id="58abfb994a75b4140edc2a973ec9a3dc" category="summary">Cloud Manager를 사용하여 Google에서 관리 Google Kubernetes Engine 클러스터(GKE) 및 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다. 클러스터를 Cloud Manager에 추가하려면 먼저 다음 요구사항을 충족해야 합니다.</block>
   <block id="b6511d823d5fc5c8c219b52663e32c20" category="doc">Google Cloud의 Kubernetes 클러스터 요구사항</block>
   <block id="5c24db37dbf4e9b0061b549aeed26cc0" category="paragraph">Cloud Manager를 사용하여 Google에서 관리되는 GKE(Google Kubernetes Engine) 클러스터와 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다. 클러스터를 Cloud Manager에 추가하려면 먼저 다음 요구사항을 충족해야 합니다.</block>
   <block id="89acfe5365df26c5b2d9c418b9507492" category="paragraph">이 항목에서는 _Kubernetes cluster_를 사용합니다. 여기서 구성은 GKE 및 자체 관리되는 Kubernetes 클러스터의 경우 동일합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.</block>
-  <block id="de99b3160528c7a2754f4c5dd4dbb80d" category="inline-link">Helm을 사용한 설치 단계는 Astra Trident 문서로 이동합니다</block>
-  <block id="39b552ed633d800ed1446ff39c2a30b5" category="list-text">Kubernetes 클러스터에는 NetApp Astra Trident가 구축되어 있어야 합니다. Helm을 사용하여 Astra Trident의 최신 버전 4개 중 하나를 설치합니다.<block ref="fa49b53e52d430e79adf34c6f68f47be" category="inline-link-rx"></block>.</block>
   <block id="1e7fd0342ed668ad1096d1c03fb7af17" category="list-text">Cloud Volumes ONTAP는 Kubernetes 클러스터와 동일한 테넌시 계정, 작업 공간 및 커넥터 아래의 Cloud Manager에 있어야 합니다.<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>.</block>
   <block id="529dbfeb8ae591bdc60b1e28dbcdacc6" category="list-text">Connector는 필요한 권한으로 Google에서 실행 중이어야 합니다. <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>.</block>
   <block id="6f9b9566eef8a735c30e29931c068a03" category="list-text">Cloud Manager는 Active Directory를 사용 또는 사용하지 않는 RBAC 지원 클러스터를 지원합니다. Cloud Manager Connector 역할은 각 GKE 클러스터에서 권한이 부여되어야 합니다. <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>.</block>
@@ -129,7 +110,6 @@
   <block id="837b8b5111e480b693f744fec1804ccb" category="list-text">의 서비스 계정 세부 정보 를 클릭합니다 <block ref="90b0dbeec03910bdea419bc944660763" category="inline-link-macro-rx"></block>.</block>
   <block id="4bf9575451981aabdb909c6a57da72cf" category="inline-image-macro">Cloud Console의 서비스 계정 세부 정보 스크린샷</block>
   <block id="ae62d39210641a9fb9c2dd38c13a2b07" category="paragraph"><block ref="ae62d39210641a9fb9c2dd38c13a2b07" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ad4cf17755a22769adfcbfac8d05ece2" category="list-text">다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 인증된 서비스 계정의 고유 ID로 바꿉니다.</block>
   <block id="59926e95a1273af1eff3f3a8847d1286" category="summary">Cloud Manager를 사용하여 Azure에서 관리되는 Azure Kubernetes 클러스터(AKS) 및 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다. 클러스터를 Cloud Manager에 추가하려면 먼저 다음 요구사항을 충족해야 합니다.</block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="doc">Azure의 Kubernetes 클러스터 요구사항</block>
   <block id="39e746094f61257868fbdee54e708de3" category="paragraph">이 항목에서는 AKS 및 자체 관리 Kubernetes 클러스터의 구성이 동일한 _Kubernetes 클러스터를 사용합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.</block>
@@ -163,7 +143,6 @@
   <block id="787c8e09d4ba5342ce8f84b1af78b048" category="inline-image-macro">Azure 관리 포털의 시스템 할당 개체 ID 창 스크린샷</block>
   <block id="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="paragraph"><block ref="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4ebffaff3187e96f25bb8b4b25978bda" category="list-text">자체 관리되는 Kubernetes 클러스터 * 를 구축하는 경우 권한이 있는 사용자의 사용자 이름이 필요합니다.</block>
-  <block id="333544b2aeb49831884a7faafb490e35" category="list-text">다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 위에서 설명한 대로 시스템에서 할당한 관리 ID의 개체 ID 또는 권한이 있는 사용자의 사용자 이름으로 바꿉니다.</block>
   <block id="e59cbc41f2797427c91406bb0b03401e" category="summary">고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes 클러스터를 추가하십시오.</block>
   <block id="d9348d075dc7b3c91cff99d56dfc327b" category="doc">Kubernetes 문서</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
@@ -206,14 +185,10 @@
   <block id="b695b2f49a50c3d925dc789182bc1070" category="list-text">YAML 형식의 Kubernetes 구성 파일을 업로드합니다.</block>
   <block id="6e53f86d2931b115352479b77b41a90e" category="inline-image-macro">구성 파일 및 사용 가능한 클러스터 표가 포함된 Kubernetes 클러스터 가져오기 페이지의 스크린샷</block>
   <block id="c0051c23ce1a6dfb0a01449b18d415ad" category="paragraph"><block ref="c0051c23ce1a6dfb0a01449b18d415ad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="546b680809febc3022d8385dde42cd09" category="summary">Canvas에 관리 Kubernetes 클러스터를 추가한 후 NetApp의 클라우드 데이터 서비스를 사용하여 고급 데이터 관리를 수행할 수 있습니다.</block>
-  <block id="e8cae55afec935b901fe515559f5c672" category="doc">Kubernetes 클러스터에서 NetApp의 클라우드 데이터 서비스를 사용합니다</block>
   <block id="88115501de56483f3bf8dd5514ce1d84" category="paragraph">현재 Cloud Backup은 Kubernetes 클러스터에서 지원됩니다. Cloud Backup을 사용하여 영구 볼륨을 오브젝트 스토리지에 백업할 수 있습니다.</block>
   <block id="963408f4aa8e949d60c3b0befc33267d" category="inline-link">영구 볼륨을 백업하는 방법을 알아보려면 Cloud Backup 문서로 이동합니다</block>
-  <block id="e77b635529c315242274245769062742" category="paragraph"><block ref="0cf41425f985f21dcce976508ef1a8db" category="inline-link-rx"></block>.</block>
   <block id="a55035d13d56568118050b48f14c492f" category="summary">Amazon Elastic Kubernetes Service(Amazon EKS) 클러스터를 Cloud Manager에 추가하면 영구 볼륨의 백업을 Amazon S3에 시작할 수 있습니다.</block>
   <block id="293e3749aa00f6ba4c48a0f2d8f93ba2" category="doc">Cloud Manager에 Amazon Kubernetes 클러스터를 추가합니다</block>
-  <block id="52d46a61443272c06b413508e1c79b15" category="paragraph">Kubernetes clusers를 검색 또는 Cloud Manager로 임포트하여 영구 볼륨을 Amazon S3에 백업할 수 있습니다.</block>
   <block id="29508a151c67e3d0dd86c039a47344fd" category="list-text">Amazon Web Services * &gt; * Kubernetes Cluster * 를 선택하고 * Next * 를 클릭합니다.</block>
   <block id="d59c3e6f1bd8ff190720d2953c94c804" category="inline-image-macro">선택한 AWS 지역 및 Kubernetes 클러스터를 보여 주는 Kubernetes 클러스터 검색 페이지의 스크린샷</block>
   <block id="f8c9a10cf098481ef28aa7f25a7229aa" category="paragraph"><block ref="f8c9a10cf098481ef28aa7f25a7229aa" category="inline-image-macro-rx" type="image"></block></block>
@@ -245,7 +220,6 @@
   <block id="6e65026446a3f3b3ebb5471fa617ce29" category="sidebar">AWS에서 클러스터 추가</block>
   <block id="2d1f9ee77fc479dfb743551a0245845f" category="sidebar">Azure에서 클러스터 추가</block>
   <block id="ba9410f15dd19e0a92f5f4c2291636d6" category="sidebar">Google Cloud에서 클러스터를 추가합니다</block>
-  <block id="68cac9b88f3148d5dfe0e976ab311e4f" category="sidebar">Kubernetes 클러스터에서 데이터 서비스 지원</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="41e3782291be693bb1f948094d98229d" category="sidebar">데이터 서비스 지원</block>
@@ -254,11 +228,170 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="a6a798b867f9fc8417745a183efd7eb6" category="list-text"><block ref="022a32848e9a635fb610022260eb258d" category="inline-link-rx"></block> (권장)</block>
-  <block id="8d55e3e5808e7e03da07d756385c832d" category="list-text"><block ref="8d55e3e5808e7e03da07d756385c832d" category="inline-link-rx"></block></block>
-  <block id="6014ba23e9fc5f2c6887737ea05510d8" category="list-text"><block ref="6b9aa097c47f43d8df1053195d75d9bf" category="inline-link-rx"></block> (권장)</block>
-  <block id="d411eaec4bb582e5916583ac64fcdf30" category="list-text"><block ref="d411eaec4bb582e5916583ac64fcdf30" category="inline-link-rx"></block></block>
-  <block id="e21cac46a7c03ad31fa2e72981de80dc" category="list-text"><block ref="4f38115e376c78857e2927695cec2c43" category="inline-link-rx"></block> (권장)</block>
-  <block id="df9caceb718925bf1c4a4541fb09798b" category="list-text"><block ref="df9caceb718925bf1c4a4541fb09798b" category="inline-link-rx"></block></block>
-  <block id="81d769953d03a391b5322bf4f84f2aff" category="list-text"><block ref="81d769953d03a391b5322bf4f84f2aff" category="inline-link-rx"></block></block>
+  <block id="32fc9c6f3a293194ff9fde5db876cbb6" category="section-title">2022년 4월 4일</block>
+  <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">Cloud Manager 리소스 페이지를 사용하여 Kubernetes 클러스터를 관리합니다</block>
+  <block id="26d6d7c2307bf3cf565d0e8283db031d" category="list-text">이제 Kubernetes 클러스터 관리가 클러스터 작업 환경과의 통합을 직접 개선했습니다. 이제 클러스터 리소스 페이지에서 다음 작업을 수행할 수 있습니다.</block>
+  <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">Astra Trident를 설치합니다</block>
+  <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
+  <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">스토리지 클래스를 추가합니다</block>
+  <block id="be2f7669a1d3d4dec877a85297de18ec" category="list-text"><block ref="be2f7669a1d3d4dec877a85297de18ec" category="inline-link-macro-rx"></block></block>
+  <block id="260adbf21b473e18ea0788235c9512b8" category="inline-link-macro">영구 볼륨 보기</block>
+  <block id="6a38c17b4adfb6fade3691d6bab9976a" category="list-text"><block ref="6a38c17b4adfb6fade3691d6bab9976a" category="inline-link-macro-rx"></block></block>
+  <block id="f253fdd547a6f5e0e05bbdb671ae8b24" category="inline-link-macro">클러스터를 제거합니다</block>
+  <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
+  <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">빠른 시작</block>
+  <block id="2caed3e1483d538b0b868d278bd53949" category="list-text">새로운 소식 <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> 빠르게 설치하고 실행할 수 있습니다.</block>
+  <block id="4e6d8a21fe823b1687cc8c006854102e" category="paragraph">Kubernetes 클러스터를 Cloud Manager로 검색 또는 임포트하여 영구 볼륨을 Amazon S3에 백업할 수 있습니다.</block>
+  <block id="56a8cd5372dfc93abbb885fc864189bf" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 호환되는 Astra Trident 설치를 확인하거나 Astra Trident를 설치할 수 있습니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다.</block>
+  <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident 문서</block>
+  <block id="8600dce42208e643e9f3e0a996c90220" category="paragraph">Astra Trident에 대한 자세한 내용은 을 참조하십시오 <block ref="2b8a155fc083396b96b18cee0ba5eab0" category="inline-link-macro-rx"></block>.</block>
+  <block id="703b6be9eec96bb49a157de2a1ae70ae" category="admonition">Astra Trident가 설치되지 않았거나 호환되지 않는 버전의 Astra Trident가 설치된 경우 클러스터에 필요한 조치가 표시됩니다.</block>
+  <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.</block>
+  <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">Astra Trident가 설치되지 않은 경우 * Install Trident * 를 클릭합니다.</block>
+  <block id="7c729d1891ae54bb841ac8551a0cc665" category="inline-image-macro">Astra Trident가 설치되지 않은 K8s 리소스 페이지 스크린샷과 Astra Trident를 설치하는 단추.</block>
+  <block id="fca8d7d1d460e9d7e376d9a8c0436a56" category="paragraph"><block ref="fca8d7d1d460e9d7e376d9a8c0436a56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="607bff952f97786985d5316831fa1fa1" category="inline-link">업그레이드 단계는 Astra Trident 문서로 이동합니다</block>
+  <block id="964778d2cea436fcbfab23500ba508d3" category="list-text">Astra Trident의 백 레벨 버전이 설치된 경우<block ref="7750d0e2469b3c9ff5677b5c3166bd8d" category="inline-link-rx"></block>.</block>
+  <block id="b856d54eb2c982baae9beda550a3c6e4" category="inline-image-macro">Astra Trident 업그레이드 프로세스 스크린샷.</block>
+  <block id="fd007b3e14f8b08692b19f1bf6b9ae5b" category="paragraph"><block ref="fd007b3e14f8b08692b19f1bf6b9ae5b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5af4fd067fdcfc2366829de01d0a1fe4" category="paragraph">Astra Trident의 최신 버전이 설치되어 있습니다. 이제 스토리지 클래스를 추가할 수 있습니다.</block>
+  <block id="dcfed683336073a1cbf61c7b6871cc34" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 작업 공간에서 클러스터를 제거할 수 있습니다.</block>
+  <block id="f9a4b06baa6b1477afa377706cef0f0f" category="doc">작업 공간에서 Kubernetes 클러스터를 제거합니다</block>
+  <block id="f33a40ad5d2017c9e1b0e7abd7a5a643" category="list-text">Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.</block>
+  <block id="c3779df0736ecbd3346b30067bbc3d57" category="list-text">페이지 오른쪽 상단에서 작업 메뉴를 선택하고 * 작업 영역에서 제거 * 를 클릭합니다.</block>
+  <block id="cc684c4b8845d4e51e87b6bf727c1d76" category="inline-image-macro">작업 공간에서 Kubernetes 클러스터를 제거하는 메뉴를 보여 주는 스크린샷</block>
+  <block id="4d742ed466433397d47332397dc4d3c4" category="paragraph"><block ref="4d742ed466433397d47332397dc4d3c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffbd99556cf50096753bfbd7a907b09c" category="list-text">Remove * 를 클릭하여 작업 공간에서 클러스터 제거를 확인합니다. 언제든지 이 클러스터를 다시 검색할 수 있습니다.</block>
+  <block id="bcec5055290dea9702824b44b3ed2bff" category="inline-image-macro">작업 공간에서 Kubernetes 클러스터 제거를 확인하는 페이지의 스크린샷</block>
+  <block id="86a5f92314f48ea7dfb3565a2752a76d" category="paragraph"><block ref="86a5f92314f48ea7dfb3565a2752a76d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes 클러스터가 작업 공간에서 제거되어 Canvas에 더 이상 표시되지 않습니다.</block>
+  <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 스토리지 클래스를 관리할 수 있습니다.</block>
+  <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="doc">스토리지 클래스를 관리합니다</block>
+  <block id="76a5809985aa691391b31d5f20c17a42" category="admonition">스토리지 클래스가 정의되어 있지 않으면 클러스터에 필요한 작업이 표시됩니다.</block>
+  <block id="8e79c25356bb563e28e9ae0a108b960b" category="list-text">4가지 최신 버전의 Astra Trident 중 하나가 설치되었는지 확인합니다.</block>
+  <block id="af1dab031c2b915817ef7d5169fdfcfb" category="list-text">Kubernetes 클러스터의 스토리지 클래스를 정의하려면 * 스토리지 클래스 추가 * 를 클릭합니다.</block>
+  <block id="790a7b05e43ed5454554eef9671154f0" category="inline-image-macro">스토리지 클래스 추가 버튼을 보여 주는 K8s 리소스 페이지의 스크린샷</block>
+  <block id="bac110b30291a86e52ffa944c5ba6bb5" category="paragraph"><block ref="bac110b30291a86e52ffa944c5ba6bb5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">스토리지 클래스의 이름을 입력하고 정의 옵션을 선택한 후 * 다음 * 을 클릭합니다.</block>
+  <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">K8s 스토리지 클래스에 대한 정의 옵션을 보여 주는 스크린샷</block>
+  <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">클러스터에 연결할 작업 환경을 선택합니다. 추가 * 를 클릭합니다.</block>
+  <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">Kubernetes 클러스터의 작업 환경 선택을 보여 주는 스크린샷</block>
+  <block id="f99a712980063704c4a584a6683234a2" category="paragraph"><block ref="f99a712980063704c4a584a6683234a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">클릭하여 Kubernetes 클러스터의 리소스 페이지에서 스토리지 클래스를 볼 수 있습니다.</block>
+  <block id="24d4e555e1f7b6ed662909980cd4b88c" category="inline-image-macro">Kubernetes 리소스 페이지의 "스토리지 클래스 보기"를 보여 주는 스크린샷</block>
+  <block id="a770b061844a8f658a79e0452983186e" category="paragraph"><block ref="a770b061844a8f658a79e0452983186e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a51c9219854a3d214e31f819a1e7632e" category="section-title">작업 환경 세부 정보를 봅니다</block>
+  <block id="fed6f504a568def380a16e81e4509c4b" category="list-text">Storage Classes * 탭을 클릭합니다.</block>
+  <block id="c05b19af7187edbea768275aa1835d7e" category="list-text">작업 환경에 대한 세부 정보를 보려면 정보 아이콘을 클릭합니다.</block>
+  <block id="093397c8ba222a56a6cafe0046ed32df" category="paragraph">작업 환경 세부 정보 패널이 열립니다.</block>
+  <block id="88d7886b91f2558662854777a9258628" category="inline-image-macro">Kubernetes 클러스터의 작업 환경 세부 정보에 대한 스크린샷</block>
+  <block id="30839295878a455d18f2b8a0dce98721" category="paragraph"><block ref="30839295878a455d18f2b8a0dce98721" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6cb5ec91420685bca856d5c3c506a3f0" category="section-title">기본 스토리지 클래스를 설정합니다</block>
+  <block id="e06675debd77236832cd1bc55da29490" category="list-text">스토리지 클래스에 대한 작업 메뉴를 클릭하고 * 기본값으로 설정 * 을 클릭합니다.</block>
+  <block id="60994baeb2a6bcfbd041df549466a420" category="inline-image-macro">기본 스토리지 클래스를 설정하는 작업 메뉴 스크린샷</block>
+  <block id="fa49b244e60624d651baf60664e565b3" category="paragraph"><block ref="fa49b244e60624d651baf60664e565b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1d758a802b437c14987d63e77a61a9e" category="paragraph">선택한 스토리지 클래스가 기본값으로 설정됩니다.</block>
+  <block id="248ead8f8ebff7c3211d2c918694e817" category="inline-image-macro">기본 스토리지 클래스를 보여 주는 스크린샷</block>
+  <block id="101961998c35d35cc5ab5fd53eb57c57" category="paragraph"><block ref="101961998c35d35cc5ab5fd53eb57c57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90c935e9359ed5f4172e2bfbf031b209" category="section-title">저장소 클래스를 제거합니다</block>
+  <block id="e2fee88009bdc68bb3ccdcdbef57c310" category="inline-image-macro">스토리지 클래스를 제거하는 작업 메뉴 스크린샷</block>
+  <block id="04ed0f4f9893c8d492f8a5ac74b5a400" category="paragraph"><block ref="04ed0f4f9893c8d492f8a5ac74b5a400" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78b12c7f2018d4a6b9b2d3ab0aa23fab" category="list-text">스토리지 클래스 제거를 확인하려면 * 제거 * 를 클릭합니다.</block>
+  <block id="14d57c72376f75349d67da3b67721b52" category="inline-image-macro">스토리지 클래스를 제거하는 확인 화면의 스크린샷</block>
+  <block id="0dd89c6b1e51baa8486c2bb0e6b80b54" category="paragraph"><block ref="0dd89c6b1e51baa8486c2bb0e6b80b54" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afd76a0ed7f0f829a9fddbc272ab6299" category="paragraph">선택한 저장소 클래스가 제거됩니다.</block>
+  <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 NetApp 클라우드 데이터 서비스를 사용하여 고급 데이터 관리를 수행할 수 있습니다.</block>
+  <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">Kubernetes 클러스터에서 NetApp 클라우드 데이터 서비스 사용</block>
+  <block id="159a2c61a2d800a03c28121597f3f775" category="paragraph"><block ref="c231e29babf1a493836bb058a52173d8" category="inline-link-macro-rx"></block>.</block>
+  <block id="09bb0b2da16893a3eff055a9d40e2794" category="summary">Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이터 관리를 몇 가지 간단한 단계로 수행할 수 있습니다.</block>
+  <block id="79e470c48afbbe1fa9e042e6403d2459" category="doc">Kubernetes 클러스터 시작</block>
+  <block id="6c5ac2a580024aab98e753e5c4dc264c" category="paragraph">다음 단계를 수행하여 빠르게 시작하십시오.</block>
+  <block id="2fadcb7c66778a6e996282a9d85d69d3" category="paragraph">환경이 클러스터 유형의 사전 요구 사항을 충족하는지 확인합니다.</block>
+  <block id="91371b061c7d73513ec2d8334d74507a" category="paragraph"><block ref="91371b061c7d73513ec2d8334d74507a" category="inline-link-macro-rx"></block></block>
+  <block id="8ef69472e0bf92730a0f3921c882ccd5" category="paragraph"><block ref="8ef69472e0bf92730a0f3921c882ccd5" category="inline-link-macro-rx"></block></block>
+  <block id="30cbb99c1fb544a739a33f3089a4207a" category="paragraph"><block ref="30cbb99c1fb544a739a33f3089a4207a" category="inline-link-macro-rx"></block></block>
+  <block id="822d28ac02a6b0c333bf3eabab847e14" category="paragraph">Cloud Manager를 사용하여 Kubernetes 클러스터를 추가하고 작업 환경에 연결할 수 있습니다.</block>
+  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link-macro">Amazon Kubernetes 클러스터를 추가합니다</block>
+  <block id="58edfe2caca070b44396387dc8c34d0d" category="paragraph"><block ref="58edfe2caca070b44396387dc8c34d0d" category="inline-link-macro-rx"></block></block>
+  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link-macro">Azure Kubernetes 클러스터를 추가합니다</block>
+  <block id="e9c72c951b20431e1caafe9920ac0b62" category="paragraph"><block ref="e9c72c951b20431e1caafe9920ac0b62" category="inline-link-macro-rx"></block></block>
+  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link-macro">Google Cloud Kubernetes 클러스터를 추가합니다</block>
+  <block id="ec22f19404cd18f489ae10e70492134a" category="paragraph"><block ref="ec22f19404cd18f489ae10e70492134a" category="inline-link-macro-rx"></block></block>
+  <block id="c5ea1d5f2f35adec1d872ec686a8c040" category="paragraph">네이티브 Kubernetes 인터페이스 및 구조를 사용하여 영구 볼륨을 요청 및 관리합니다. Cloud Manager는 영구 볼륨을 프로비저닝할 때 사용할 수 있는 NFS 및 iSCSI 스토리지 클래스를 생성합니다.</block>
+  <block id="fc0f20615e6c250961a9e88b2929444b" category="inline-link-macro">Astra Trident를 사용하여 첫 번째 볼륨을 프로비저닝하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="28eb70a7fd7de45b7957d03e5f3d4554" category="paragraph"><block ref="439da74acd283499ba63209cd4e1e52e" category="inline-link-macro-rx"></block>.</block>
+  <block id="30b6dbd7820394673df20d4ca1a96433" category="paragraph">Kubernetes 클러스터를 Cloud Manager에 추가한 후 Cloud Manager 리소스 페이지에서 클러스터를 관리할 수 있습니다.</block>
+  <block id="f500d0f02d11fd7c61fe2f5da39074f0" category="inline-link-macro">Kubernetes 클러스터를 관리하는 방법에 대해 알아보십시오.</block>
+  <block id="35cbaff5433d00a9b082ae5c280b5e9e" category="paragraph"><block ref="35cbaff5433d00a9b082ae5c280b5e9e" category="inline-link-macro-rx"></block></block>
+  <block id="b0c3c99bdd45282a0907b14337e167d0" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 연결된 영구 볼륨을 볼 수 있습니다.</block>
+  <block id="ca264d2d0523bcea1c8aa70735414da1" category="paragraph">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 영구 볼륨을 볼 수 있습니다.</block>
+  <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="inline-link-macro">프로비저닝</block>
+  <block id="fcba6012c777a16b10bc3866ceb75c1c" category="list-text">개요 * 탭에서 * 볼륨 보기 * 를 클릭하거나 * 영구 볼륨 * 탭을 클릭합니다. 영구 볼륨이 구성되지 않은 경우 를 참조하십시오 <block ref="8ea547c8e5046e3bbfaab0e05145f9ac" category="inline-link-macro-rx"></block> Astra Trident에서 볼륨을 프로비저닝하는 방법에 대한 자세한 내용은</block>
+  <block id="3a84970eaeee39d237d01aa9a3807a56" category="paragraph">구성된 영구 볼륨의 테이블이 표시됩니다.</block>
+  <block id="9d7f06e389e97b5210ff3327f767fb7e" category="inline-image-macro">영구 볼륨 표의 스크린샷.</block>
+  <block id="592eeadfba828d69880933e6db8c3887" category="paragraph"><block ref="592eeadfba828d69880933e6db8c3887" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fbb4c4e41bf29d56afd94a8150a4fc4d" category="summary">Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오픈 소스 프로젝트입니다. Astra Trident는 Kubernetes 및 영구 볼륨 프레임워크와 기본적으로 통합되어 NetApp 스토리지 플랫폼을 함께 실행하는 시스템에서 볼륨을 원활하게 프로비저닝 및 관리합니다.</block>
+  <block id="f3edad7dd39ccdb42ecbbd25ce696ef7" category="doc">Cloud Manager의 Kubernetes 데이터 관리</block>
+  <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link-macro">Trident에 대해 자세히 알아보십시오</block>
+  <block id="4f63c1d4acd536bd5b9a9745d3f20e7b" category="paragraph">Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오픈 소스 프로젝트입니다. Astra Trident는 Kubernetes 및 영구 볼륨 프레임워크와 기본적으로 통합되어 NetApp 스토리지 플랫폼을 함께 실행하는 시스템에서 볼륨을 원활하게 프로비저닝 및 관리합니다. <block ref="dd2206fc656d0a859de4039d89433dfe" category="inline-link-macro-rx"></block>.</block>
+  <block id="ce13beab50b67927b1103252e965db42" category="paragraph">Cloud Manager를 사용하여 Kubernetes 클러스터를 직접 관리할 수 있습니다.</block>
+  <block id="9e2a7f44aa27cc7ead915762de91e605" category="list-text">Astra Trident를 설치합니다.</block>
+  <block id="3e1566822574596f61c1fe009087856e" category="list-text">하이브리드 클라우드 인프라의 일부로 클러스터를 추가하고 관리합니다.</block>
+  <block id="aa6e96555ed26ef1dcb622e5b13653ae" category="list-text">스토리지 클래스를 추가 및 관리하고 작업 환경에 연결합니다.</block>
+  <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다.</block>
+  <block id="d309ea6b2fbd918f1d33db3b349ce70e" category="paragraph">Cloud Manager는 다음과 같은 환경에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.</block>
+  <block id="46a72d9af542e3e84ec5f5f3a72f54c1" category="inline-link-macro">Amazon Elastic Kubernetes Service(Amazon EKS)</block>
+  <block id="7686fcee34a9e771a02c0b8615f7751b" category="list-text"><block ref="7686fcee34a9e771a02c0b8615f7751b" category="inline-link-macro-rx"></block></block>
+  <block id="f3bd1985b243e9691bbbd63c6702344b" category="inline-link-macro">Microsoft Azure Kubernetes Service(AKS)</block>
+  <block id="dcb1c5115f00a4ce733e979d31754406" category="list-text"><block ref="dcb1c5115f00a4ce733e979d31754406" category="inline-link-macro-rx"></block></block>
+  <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine(GKE)</block>
+  <block id="b987f0a825761c9e56972aa39ef676f8" category="list-text"><block ref="b987f0a825761c9e56972aa39ef676f8" category="inline-link-macro-rx"></block></block>
+  <block id="213acaa88814071409958acdc9192518" category="section-title">Astra Trident 구축을 지원했습니다</block>
+  <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">사전 요구 사항을 검토합니다</block>
+  <block id="e244dca7cd711ef2b227bcd422cd641e" category="paragraph">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 설치 전.</block>
+  <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">운영자와 함께 업그레이드하십시오</block>
+  <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">Astra Trident를 업그레이드하려면 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>.</block>
+  <block id="c4541926fe853a3614406482ac212fff" category="list-text">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident를 설치하기 전</block>
+  <block id="f404e9d0235ae9dbfd304a568ea59510" category="list-text"><block ref="03eaf10395ef9e3efad62cf1e4438d2a" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="446e449228d00ad435a264295f1e0158" category="list-text"><block ref="446e449228d00ad435a264295f1e0158" category="inline-link-macro-rx"></block></block>
+  <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">백업 및 복원</block>
+  <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">백업 및 복원에는 기본 인증만 필요합니다.</block>
+  <block id="589cddcfb97ddd817654b8448e583560" category="list-text">Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장된 인증이 필요합니다.</block>
+  <block id="e38848cde65bc177038607eba51773c3" category="list-text">Astra 트리덴트 설치</block>
+  <block id="0cc29c3016f8edd45e66cfd491cc35e4" category="list-text">Astra Trident를 설치하려면 Cloud Manager에 대한 전체 인증을 제공해야 합니다.</block>
+  <block id="6ddcbf7c123160275093489b09f57178" category="admonition">Astra Trident를 설치할 때 Cloud Manager는 Astra Trident와 스토리지 클러스터와 통신하는 데 필요한 자격 증명이 포함된 Astra Trident 백엔드 및 Kubernetes 암호를 설치합니다.</block>
+  <block id="a392c9c3d2df2d0a5afaed519cd01879" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 인증된 서비스 계정의 고유 ID로 바꿉니다.</block>
+  <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">백업/복원</block>
+  <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">Kubernetes 클러스터의 백업 및 복원을 위한 기본 인증을 추가하십시오.</block>
+  <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">스토리지 클래스</block>
+  <block id="a296388d715a55c1152745b7367fc0c5" category="paragraph">Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장 인증을 추가합니다.</block>
+  <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">Trident를 설치합니다</block>
+  <block id="47b31bee79140af784a118e6eb34fdbd" category="paragraph">명령줄을 사용하여 전체 인증을 제공하고 Cloud Manager에서 Astra Trident를 설치할 수 있도록 합니다.</block>
+  <block id="74ac826b742735257c4c43faffe62b41" category="list-text">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident를 설치하기 전</block>
+  <block id="f89e07a755c721ce8e7e3c8eed5f0f13" category="list-text"><block ref="e4079d926604a2f5b999934a2d4f26d7" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="f994827af963c9b45fb8cbbe74adc22c" category="list-text"><block ref="f994827af963c9b45fb8cbbe74adc22c" category="inline-link-macro-rx"></block></block>
+  <block id="05a0030833e70e4af624c3716f988104" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 위에서 설명한 대로 시스템에서 할당한 관리 ID의 개체 ID 또는 권한이 있는 사용자의 사용자 이름으로 바꿉니다.</block>
+  <block id="d8504168dbe366f1ffe49a77a72eacda" category="list-text"><block ref="c55a72352b8cc03452bbfc87fde8900e" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="8b279013423512c41be32334a5cc81ec" category="list-text"><block ref="8b279013423512c41be32334a5cc81ec" category="inline-link-macro-rx"></block></block>
+  <block id="9f5e2bf1b2647c62e7ea24017cc08df2" category="list-text"><block ref="9f5e2bf1b2647c62e7ea24017cc08df2" category="inline-link-macro-rx"></block></block>
+  <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">다른 기능을 사용하려면 다른 권한이 필요합니다.</block>
+  <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다.</block>
+  <block id="e4e88e99e021b78e80ca0c688485ea20" category="list-text">eksctl을 사용하여 권한 그룹에 대한 ID 매핑을 만듭니다. 아래에 예가 나와 있습니다.</block>
+  <block id="fe56eccd77db48009fae1416eb34f4bd" category="summary">Cloud Manager를 사용하여 Astra Trident를 설치하고, 스토리지 클래스를 구성하고, 클러스터를 제거하고, 데이터 서비스를 활성화할 수 있습니다.</block>
+  <block id="384b71db954a7a463c759208283e47c4" category="doc">Kubernetes 클러스터 관리</block>
+  <block id="7e60eeaefc6a3c5fb637acd03070a64a" category="paragraph">Kubernetes 클러스터를 Cloud Manager에 추가한 후에는 리소스 페이지에서 클러스터를 관리할 수 있습니다. 리소스 페이지를 열려면 Canvas에서 Kubernetes 작업 환경을 두 번 클릭합니다.</block>
+  <block id="a55c9ab275da7d6af3d043922cbe9db6" category="inline-image-macro">클러스터에 대한 세부 정보를 보여주는 Kubernetes 리소스 페이지의 스크린샷</block>
+  <block id="6e7cef0ef9634162a88caaa29c694893" category="paragraph"><block ref="6e7cef0ef9634162a88caaa29c694893" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a7f3527cff1099d537e438e6d62de3f" category="paragraph">리소스 페이지에서 다음을 수행할 수 있습니다.</block>
+  <block id="ae98d4fcb6e8e5720784f6c4936d3fda" category="list-text">Kubernetes 클러스터 상태를 봅니다.</block>
+  <block id="4c1d1c29dc032acaba6d87523245901a" category="list-text">Astra Trident가 설치되었는지 확인합니다. 을 참조하십시오 <block ref="345832d3138c1eb0f6633c370a7f6028" category="inline-link-macro-rx"></block>.</block>
+  <block id="1144aea980959108cfaf2514fbf4950d" category="list-text">스토리지 클래스를 추가 및 제거합니다. 을 참조하십시오 <block ref="9e82adf493a42c7e6eea0f3ece5f1523" category="inline-link-macro-rx"></block>.</block>
+  <block id="148ab235d087e61e2b2f7fd1f1c69a5f" category="list-text">영구 볼륨 보기 을 참조하십시오 <block ref="cd4689f963d360c6dbfc83d0ed5ebd22" category="inline-link-macro-rx"></block>.</block>
+  <block id="001f7c78e2e0007ed1165a22b8a857c7" category="list-text">작업 공간에서 Kubernetes 클러스터를 제거합니다. 을 참조하십시오 <block ref="2345a967fe9f27d7be623e42d7d8b4c4" category="inline-link-macro-rx"></block>.</block>
+  <block id="c83be9d30dd0d8b55fb8bdbf6f11eb85" category="inline-link-macro">NetApp 클라우드 데이터 서비스를 사용해 보십시오</block>
+  <block id="5988e88f080603d109047fd28346431d" category="list-text">Cloud Backup을 활성화하거나 봅니다. 을 참조하십시오 <block ref="970aaadca61cb9a29c8e2b76716ffafe" category="inline-link-macro-rx"></block>.</block>
+  <block id="33729732e4c013e81e5576920fedbc76" category="sidebar">NetApp 클라우드 데이터 서비스 지원</block>
 </blocks>

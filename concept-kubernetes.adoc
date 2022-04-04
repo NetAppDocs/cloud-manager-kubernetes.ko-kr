@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-kubernetes.html 
 keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support 
-summary: 고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes 클러스터 추가 
+summary: Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오픈 소스 프로젝트입니다. Astra Trident는 Kubernetes 및 영구 볼륨 프레임워크와 기본적으로 통합되어 NetApp 스토리지 플랫폼을 함께 실행하는 시스템에서 볼륨을 원활하게 프로비저닝 및 관리합니다. 
 ---
-= Kubernetes 개요
+= Cloud Manager의 Kubernetes 데이터 관리
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,24 +13,38 @@ summary: 고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes �
 
 
 [role="lead"]
-고급 데이터 관리를 위해 Cloud Manager에 관리 Kubernetes 클러스터 추가
+Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오픈 소스 프로젝트입니다. Astra Trident는 Kubernetes 및 영구 볼륨 프레임워크와 기본적으로 통합되어 NetApp 스토리지 플랫폼을 함께 실행하는 시스템에서 볼륨을 원활하게 프로비저닝 및 관리합니다. link:https://docs.netapp.com/us-en/trident/index.html["Trident에 대해 자세히 알아보십시오"^].
 
 
 
 == 피처
 
-* 클러스터를 Canvas에 추가하여 하이브리드 클라우드 인프라의 일부로 보고 관리할 수 있습니다
-* Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다
-+
-image:screenshot-kubernetes-backup.png["Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷"]
+Cloud Manager를 사용하여 Kubernetes 클러스터를 직접 관리할 수 있습니다.
 
+* Astra Trident를 설치합니다.
+* 하이브리드 클라우드 인프라의 일부로 클러스터를 추가하고 관리합니다.
+* 스토리지 클래스를 추가 및 관리하고 작업 환경에 연결합니다.
+* Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다.
 
 
 
 
 == 지원되는 Kubernetes 구축
 
-Cloud Manager는 Amazon Elastic Kubernetes Service(Amazon EKS) 및 Microsoft Azure Kubernetes Service(AKS)에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.
+Cloud Manager는 다음과 같은 환경에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.
+
+* link:kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service(Amazon EKS)"]
+* link:kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service(AKS)"]
+* link:kubernetes-reqs-gke.html["Google Kubernetes Engine(GKE)"]
+
+
+
+
+== Astra Trident 구축을 지원했습니다
+
+Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["사전 요구 사항을 검토합니다"^] 설치 전.
+
+Astra Trident를 업그레이드하려면 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["운영자와 함께 업그레이드하십시오"^].
 
 
 

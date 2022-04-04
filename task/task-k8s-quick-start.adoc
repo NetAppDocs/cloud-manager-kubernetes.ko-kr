@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-quick-start.html 
+keywords: kubernetes, persistent volumes, containers, persistent storage, kubeconfig, trident, kubernetes cluster, storage classes, classes, cvo-single, cvo-ha, thick provisioning, trident_trident, connect, disconnect, provision 
+summary: Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이터 관리를 몇 가지 간단한 단계로 수행할 수 있습니다. 
+---
+= Kubernetes 클러스터 시작
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이터 관리를 몇 가지 간단한 단계로 수행할 수 있습니다.
+
+
+
+== 빠른 시작
+
+다음 단계를 수행하여 빠르게 시작하십시오.
+
+[role="quick-margin-para"]
+환경이 클러스터 유형의 사전 요구 사항을 충족하는지 확인합니다.
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-aws.html["AWS의 Kubernetes 클러스터 요구사항"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-aks.html["Azure의 Kubernetes 클러스터 요구사항"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-gke.html["Google Cloud의 Kubernetes 클러스터 요구사항"]
+
+[role="quick-margin-para"]
+Cloud Manager를 사용하여 Kubernetes 클러스터를 추가하고 작업 환경에 연결할 수 있습니다.
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-aws.html["Amazon Kubernetes 클러스터를 추가합니다"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-azure.html["Azure Kubernetes 클러스터를 추가합니다"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-gke.html["Google Cloud Kubernetes 클러스터를 추가합니다"]
+
+[role="quick-margin-para"]
+네이티브 Kubernetes 인터페이스 및 구조를 사용하여 영구 볼륨을 요청 및 관리합니다. Cloud Manager는 영구 볼륨을 프로비저닝할 때 사용할 수 있는 NFS 및 iSCSI 스토리지 클래스를 생성합니다.
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-postdeployment.html#step-3-provision-your-first-volume["Astra Trident를 사용하여 첫 번째 볼륨을 프로비저닝하는 방법에 대해 자세히 알아보십시오"^].
+
+[role="quick-margin-para"]
+Kubernetes 클러스터를 Cloud Manager에 추가한 후 Cloud Manager 리소스 페이지에서 클러스터를 관리할 수 있습니다.
+
+[role="quick-margin-para"]
+link:task-k8s-manage-trident.html["Kubernetes 클러스터를 관리하는 방법에 대해 알아보십시오."]

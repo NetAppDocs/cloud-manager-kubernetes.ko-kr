@@ -21,7 +21,11 @@ Cloud Manager를 사용하여 Azure에서 관리되는 Azure Kubernetes 클러�
 
 == 요구 사항
 
-아스트라 트리덴트:: Kubernetes 클러스터에는 NetApp Astra Trident가 구축되어 있어야 합니다. Helm을 사용하여 Astra Trident의 최신 버전 4개 중 하나를 설치합니다. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html#deploy-the-trident-operator-by-using-helm["Helm을 사용한 설치 단계는 Astra Trident 문서로 이동합니다"^].
+아스트라 트리덴트:: Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["사전 요구 사항을 검토합니다"^] Astra Trident를 설치하기 전
+
+
+Astra Trident를 업그레이드하려면 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["운영자와 함께 업그레이드하십시오"^].
+
 Cloud Volumes ONTAP:: Cloud Volumes ONTAP를 클러스터에 대한 백엔드 스토리지로 설정해야 합니다. https://docs.netapp.com/us-en/trident/trident-use/backends.html["구성 단계를 보려면 Astra Trident 문서로 이동합니다"^].
 Cloud Manager 커넥터:: Connector는 필요한 권한을 사용하여 Azure에서 실행 중이어야 합니다. <<Prepare a Connector,아래에서 자세히 알아보십시오>>.
 네트워크 연결:: Kubernetes 클러스터와 Connector 간, Kubernetes 클러스터와 Cloud Volumes ONTAP 사이에 네트워크 연결이 필요합니다. <<Review networking requirements,아래에서 자세히 알아보십시오>>.
@@ -40,9 +44,9 @@ Kubernetes 클러스터를 검색하고 관리하려면 Azure의 Cloud Manager C
 
 아래 링크 중 하나에 있는 단계를 따르십시오.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cloud Manager에서 커넥터를 생성합니다"^] (권장)
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["Azure Marketplace에서 Connector를 생성합니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["기존 Linux 호스트에 커넥터를 설치합니다"^]
+* link:task_creating_connectors_azure.html["Cloud Manager에서 커넥터를 생성합니다"] (권장)
+* link:task_launching_azure_mktp.html["Azure Marketplace에서 Connector를 생성합니다"]
+* link:task_installing_linux.html["기존 Linux 호스트에 커넥터를 설치합니다"]
 
 
 
@@ -106,6 +110,17 @@ RBAC 검증은 AD(Active Directory)가 활성화된 Kubernetes 클러스터에�
 
 Connector가 클러스터를 검색 및 관리할 수 있도록 각 Kubernetes 클러스터에서 커넥터 역할을 승인해야 합니다.
 
+백업 및 복원:: 백업 및 복원에는 기본 인증만 필요합니다.
+스토리지 클래스를 추가합니다:: Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장된 인증이 필요합니다.
+Astra 트리덴트 설치:: Astra Trident를 설치하려면 Cloud Manager에 대한 전체 인증을 제공해야 합니다.
++
+--
+
+NOTE: Astra Trident를 설치할 때 Cloud Manager는 Astra Trident와 스토리지 클러스터와 통신하는 데 필요한 자격 증명이 포함된 Astra Trident 백엔드 및 Kubernetes 암호를 설치합니다.
+
+--
+
+
 RBAC ''프로젝트:이름:'' 구성은 Kubernetes 클러스터 유형에 따라 약간 다릅니다.
 
 * 관리되는 AKS 클러스터 * 를 배포하는 경우, Connector에 대해 시스템에서 할당한 관리 ID의 객체 ID가 필요합니다. 이 ID는 Azure 관리 포털에서 사용할 수 있습니다.
@@ -117,8 +132,85 @@ image:screenshot-k8s-aks-obj-id.png["Azure 관리 포털의 시스템 할당 개
 
 클러스터 역할 및 역할 바인딩을 생성합니다.
 
-. 다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 위에서 설명한 대로 시스템에서 할당한 관리 ID의 개체 ID 또는 권한이 있는 사용자의 사용자 이름으로 바꿉니다.
+. 귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 위에서 설명한 대로 시스템에서 할당한 관리 ID의 개체 ID 또는 권한이 있는 사용자의 사용자 이름으로 바꿉니다.
 +
+[role="tabbed-block"]
+====
+.백업/복원
+--
+Kubernetes 클러스터의 백업 및 복원을 위한 기본 인증을 추가하십시오.
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: User
+      name:
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+----
+--
+.스토리지 클래스
+--
+Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장 인증을 추가합니다.
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -133,25 +225,34 @@ rules:
           - namespaces
           - persistentvolumeclaims
           - persistentvolumes
+          - pods
+          - pods/exec
       verbs:
           - get
           - list
           - create
+          - delete
     - apiGroups:
           - storage.k8s.io
       resources:
           - storageclasses
       verbs:
           - get
+          - create
           - list
+          - delete
+          - patch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentbackends
           - tridentorchestrators
+          - tridentbackendconfigs
       verbs:
           - get
           - list
+          - create
+          - delete
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -159,13 +260,24 @@ metadata:
     name: k8s-access-binding
 subjects:
     - kind: User
-      name: Object (principal) ID (for AKS) or username (for self-managed)
+      name:
       apiGroup: rbac.authorization.k8s.io
 roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
 ----
+--
+.Trident를 설치합니다
+--
+명령줄을 사용하여 전체 인증을 제공하고 Cloud Manager에서 Astra Trident를 설치할 수 있도록 합니다.
+
+[source, cli]
+----
+kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Object (principal) ID>
+----
+--
+====
 . 클러스터에 구성을 적용합니다.
 +
 [source, kubectl]
