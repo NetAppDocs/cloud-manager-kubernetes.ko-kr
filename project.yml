@@ -20,7 +20,7 @@ sidebar:
     - title: Kubernetes 데이터 관리에 대해 자세히 알아보십시오
       url: "/concept-kubernetes.html"
     - title: 빠른 시작
-      url: "/task-k8s-quick-start.html"
+      url: "/task/task-k8s-quick-start.html"
   - title: 요구 사항
     entries:
     - title: AWS 기반 Kubernetes 클러스터
@@ -87,15 +87,15 @@ homepage:
   - title: Kubernetes 클러스터 관리
     links:
     - title: Astra Trident를 설치합니다
-      url: "/task-k8s-manage-trident.html"
+      url: "/task/task-k8s-manage-trident.html"
     - title: 스토리지 클래스를 관리합니다
-      url: "/task-k8s-manage-storage-classes.html"
+      url: "/task/task-k8s-manage-storage-classes.html"
     - title: 영구 볼륨 보기
-      url: "/task-k8s-manage-persistent-volumes.html"
+      url: "/task/task-k8s-manage-persistent-volumes.html"
     - title: 클러스터를 제거합니다
-      url: "/task-k8s-manage-remove-cluster.html"
+      url: "/task/task-k8s-manage-remove-cluster.html"
     - title: 데이터 서비스 지원
-      url: "/task/task-kubernetes-enable-services.html"
+      url: "/task/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager에 대한 지원을 받으십시오
     links:
     - title: 지원을 위해 등록하십시오
