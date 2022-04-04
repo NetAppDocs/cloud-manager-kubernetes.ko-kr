@@ -40,9 +40,9 @@ Kubernetes 클러스터를 검색하고 관리하려면 Azure의 Cloud Manager C
 
 아래 링크 중 하나에 있는 단계를 따르십시오.
 
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-azure.html["Cloud Manager에서 커넥터를 생성합니다"^] (권장)
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-launching-azure-mktp.html["Azure Marketplace에서 Connector를 생성합니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html["기존 Linux 호스트에 커넥터를 설치합니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cloud Manager에서 커넥터를 생성합니다"^] (권장)
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["Azure Marketplace에서 Connector를 생성합니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["기존 Linux 호스트에 커넥터를 설치합니다"^]
 
 
 

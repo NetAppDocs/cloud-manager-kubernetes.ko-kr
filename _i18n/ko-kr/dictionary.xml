@@ -56,11 +56,8 @@
   <block id="63959f97faa9987d540350850a41505e" category="section-title">새 커넥터를 작성합니다</block>
   <block id="7462e2b2097ede16db64534b30f77751" category="paragraph">아래 링크 중 하나에 있는 단계를 따르십시오.</block>
   <block id="a19a6ffe0bb158286b013144b83f6544" category="inline-link">Cloud Manager에서 커넥터를 생성합니다</block>
-  <block id="ec14774524c6a2b7d2548129343136f7" category="list-text"><block ref="2817c24c841f5ada48665c37ffe210fe" category="inline-link-rx"></block> (권장)</block>
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="inline-link">AWS Marketplace에서 Connector를 생성합니다</block>
-  <block id="e001c3794817ef05f699c8338c800782" category="list-text"><block ref="e001c3794817ef05f699c8338c800782" category="inline-link-rx"></block></block>
   <block id="1bc7cdde75a8dfff8d21690bae5558b4" category="inline-link">AWS의 기존 Linux 호스트에 커넥터를 설치합니다</block>
-  <block id="e8c4c9777375eaca1fbccc19cced0f47" category="list-text"><block ref="e8c4c9777375eaca1fbccc19cced0f47" category="inline-link-rx"></block></block>
   <block id="400029e32a94249459e83aadc7247559" category="section-title">기존 Connector에 필요한 권한을 추가합니다</block>
   <block id="91377322d2f9077c583ad8a53facc870" category="paragraph">3.9.13 릴리스부터 _NEWED_DEPLOY 커넥터에는 Kubernetes 클러스터의 검색 및 관리를 지원하는 세 가지 새로운 AWS 권한이 포함되어 있습니다. 이 릴리스 전에 Connector를 생성한 경우, Connector의 IAM 역할에 대한 기존 정책을 수정하여 권한을 제공해야 합니다.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
@@ -111,9 +108,7 @@
   <block id="529dbfeb8ae591bdc60b1e28dbcdacc6" category="list-text">Connector는 필요한 권한으로 Google에서 실행 중이어야 합니다. <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>.</block>
   <block id="6f9b9566eef8a735c30e29931c068a03" category="list-text">Cloud Manager는 Active Directory를 사용 또는 사용하지 않는 RBAC 지원 클러스터를 지원합니다. Cloud Manager Connector 역할은 각 GKE 클러스터에서 권한이 부여되어야 합니다. <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>.</block>
   <block id="d6eac18df77e1a94121eca44e6d305a9" category="paragraph">Kubernetes 클러스터를 검색 및 관리하려면 Google의 Cloud Manager Connector가 필요합니다. 새 Connector를 만들거나 필요한 권한이 있는 기존 Connector를 사용해야 합니다.</block>
-  <block id="51ab55b9b09987b2a41036d412c427a3" category="list-text"><block ref="d559be1fb712c0e3a1eb24a7ac2f5fb8" category="inline-link-rx"></block> (권장)</block>
   <block id="d1070a8b89935adc6bb191d1e912b5ca" category="inline-link">기존 Linux 호스트에 커넥터를 설치합니다</block>
-  <block id="5ebd5f6c069fcc937031e077c480b1a3" category="list-text"><block ref="5ebd5f6c069fcc937031e077c480b1a3" category="inline-link-rx"></block></block>
   <block id="a7d3a387d14ffdcae3ba49d52638ebb6" category="section-title">기존 Connector에 필요한 사용 권한 추가(관리되는 GKE 클러스터 검색)</block>
   <block id="960373499947a97e65ed912d5cea84f4" category="paragraph">관리되는 GKE 클러스터를 검색하려면 Connector의 사용자 지정 역할을 수정하여 권한을 제공해야 할 수 있습니다.</block>
   <block id="afcaeb8a33eef207414e875d7fa75193" category="inline-link-macro">클라우드 콘솔</block>
@@ -142,9 +137,7 @@
   <block id="65a6ead622485d947a36632d3fbe81b8" category="list-text">Connector는 필요한 권한을 사용하여 Azure에서 실행 중이어야 합니다. <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>.</block>
   <block id="0ab069b73427d83a2a8fc9c05092d504" category="list-text">Cloud Manager는 Active Directory를 사용 또는 사용하지 않는 RBAC 지원 클러스터를 지원합니다. Cloud Manager Connector 역할은 각 Azure 클러스터에서 인증되어야 합니다. <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>.</block>
   <block id="eb0e851cde19636b32bfb756a21ff840" category="paragraph">Kubernetes 클러스터를 검색하고 관리하려면 Azure의 Cloud Manager Connector가 필요합니다. 새 Connector를 만들거나 필요한 권한이 있는 기존 Connector를 사용해야 합니다.</block>
-  <block id="12ef67b6ab2d2853a436e5da856a6b17" category="list-text"><block ref="5cbf8900c78a1e8a979fc4f46f7d5fac" category="inline-link-rx"></block> (권장)</block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="inline-link">Azure Marketplace에서 Connector를 생성합니다</block>
-  <block id="bb931bec85a42f27f769f8bd1ee02a3a" category="list-text"><block ref="bb931bec85a42f27f769f8bd1ee02a3a" category="inline-link-rx"></block></block>
   <block id="51024acb2d849b543d1d3b8ba5ac16fe" category="section-title">기존 Connector에 필요한 사용 권한 추가(관리되는 AKS 클러스터 검색)</block>
   <block id="7b44ac8a40c4268ddeeb5c27394240a8" category="paragraph">관리되는 AKS 클러스터를 검색하려면 Connector의 사용자 지정 역할을 수정하여 사용 권한을 제공해야 할 수 있습니다.</block>
   <block id="c6d0403561ba931925faedb251300c4d" category="list-text">Connector 가상 머신에 할당된 역할을 확인합니다.</block>
@@ -261,4 +254,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="a6a798b867f9fc8417745a183efd7eb6" category="list-text"><block ref="022a32848e9a635fb610022260eb258d" category="inline-link-rx"></block> (권장)</block>
+  <block id="8d55e3e5808e7e03da07d756385c832d" category="list-text"><block ref="8d55e3e5808e7e03da07d756385c832d" category="inline-link-rx"></block></block>
+  <block id="6014ba23e9fc5f2c6887737ea05510d8" category="list-text"><block ref="6b9aa097c47f43d8df1053195d75d9bf" category="inline-link-rx"></block> (권장)</block>
+  <block id="d411eaec4bb582e5916583ac64fcdf30" category="list-text"><block ref="d411eaec4bb582e5916583ac64fcdf30" category="inline-link-rx"></block></block>
+  <block id="e21cac46a7c03ad31fa2e72981de80dc" category="list-text"><block ref="4f38115e376c78857e2927695cec2c43" category="inline-link-rx"></block> (권장)</block>
+  <block id="df9caceb718925bf1c4a4541fb09798b" category="list-text"><block ref="df9caceb718925bf1c4a4541fb09798b" category="inline-link-rx"></block></block>
+  <block id="81d769953d03a391b5322bf4f84f2aff" category="list-text"><block ref="81d769953d03a391b5322bf4f84f2aff" category="inline-link-rx"></block></block>
 </blocks>
