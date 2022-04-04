@@ -95,7 +95,7 @@ homepage:
     - title: 클러스터를 제거합니다
       url: "/task/task-k8s-manage-remove-cluster.html"
     - title: 데이터 서비스 지원
-      url: "/task/task/task-kubernetes-enable-services.html"
+      url: "/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager에 대한 지원을 받으십시오
     links:
     - title: 지원을 위해 등록하십시오
