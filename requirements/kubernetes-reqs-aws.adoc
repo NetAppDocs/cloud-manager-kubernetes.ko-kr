@@ -15,7 +15,8 @@ summary: 'Cloud Manager에 Amazon EKS(Amazon Elastic Kubernetes Service) 클러�
 [role="lead"]
 AWS에서 관리되는 Amazon EKS(Elastic Kubernetes Service) 클러스터 또는 자체 관리되는 Kubernetes 클러스터를 Cloud Manager에 추가할 수 있습니다. 클러스터를 Cloud Manager에 추가하려면 먼저 다음 요구사항을 충족해야 합니다.
 
-이 항목에서는 EKS 및 자체 관리 Kubernetes 클러스터에 대한 구성이 동일한 _Kubernetes 클러스터를 사용합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.
+
+NOTE: 이 항목에서는 EKS 및 자체 관리 Kubernetes 클러스터에 대한 구성이 동일한 _Kubernetes 클러스터를 사용합니다. 클러스터 유형은 구성이 다른 곳에서 지정됩니다.
 
 
 
@@ -44,9 +45,9 @@ Kubernetes 클러스터를 검색하고 관리하려면 AWS에 Cloud Manager Con
 
 아래 링크 중 하나에 있는 단계를 따르십시오.
 
-* link:task_creating_connectors_aws.html["Cloud Manager에서 커넥터를 생성합니다"] (권장)
-* link:task_launching_aws_mktp.html["AWS Marketplace에서 Connector를 생성합니다"]
-* link:task_installing_linux.html["AWS의 기존 Linux 호스트에 커넥터를 설치합니다"]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Cloud Manager에서 커넥터를 생성합니다"^] (권장)
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["AWS Marketplace에서 Connector를 생성합니다"^]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["AWS의 기존 Linux 호스트에 커넥터를 설치합니다"^]
 
 
 

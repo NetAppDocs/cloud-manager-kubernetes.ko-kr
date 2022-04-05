@@ -2,17 +2,14 @@
 <blocks>
   <block id="af145be510f242f7af2be251300750df" category="summary">Cloud Manager의 Kubernetes 새 기능에 대해 알아보십시오.</block>
   <block id="89e53003b6d65a577fb8235b9bee8621" category="doc">Cloud Manager의 Kubernetes의 새로운 기능</block>
-  <block id="f1c93420db258097a199364a47f6389a" category="section-title">2022년 2월 27일</block>
   <block id="572154af04ccf23551e78649302c6f7b" category="section-title">Google Cloud에서 Kubernetes 클러스터 지원</block>
   <block id="45cbe8fd766702dd0ad0022cbde336ce" category="paragraph">이제 Cloud Manager를 사용하여 Google Cloud에서 관리되는 GKE(Google Kubernetes Engine) 클러스터와 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다.</block>
   <block id="f1b377c7d4b75112665bc3e7ee7c340b" category="inline-link-macro">Google Cloud에서 Kubernetes 클러스터를 시작하는 방법을 알아보십시오</block>
   <block id="3ce827c1394c58f2881787b09251ab2d" category="paragraph"><block ref="e7cb8264f65fe12e2e34a432cb2daa9f" category="inline-link-macro-rx"></block>.</block>
-  <block id="323b3f6bd6f8fad6e54ac5e1413cf3dc" category="section-title">2022년 1월 11일</block>
   <block id="a654243ef958097102b375693f5579bb" category="section-title">Azure에서 Kubernetes 클러스터 지원</block>
   <block id="8856f1df28666fb615f0de120179dd80" category="paragraph">이제 Cloud Manager를 사용하여 Azure에서 관리되는 Azure Kubernetes 클러스터(AKS) 및 자체 관리 Kubernetes 클러스터를 추가하고 관리할 수 있습니다.</block>
   <block id="8e2d16714747b48d3d5d0993c14ca91c" category="inline-link-macro">Azure에서 Kubernetes 클러스터 시작</block>
   <block id="2516f4b40f47332c7df68b7816e02b00" category="paragraph"><block ref="2516f4b40f47332c7df68b7816e02b00" category="inline-link-macro-rx"></block></block>
-  <block id="e7c5ad171298e38494ee7665c2b581e3" category="section-title">2021년 11월 28일</block>
   <block id="1dca9cae8959517f7a37b2277e33b485" category="section-title">AWS의 Kubernetes 클러스터 지원</block>
   <block id="40396b2dd864537704e1a71862a49298" category="paragraph">이제 고급 데이터 관리를 위해 Cloud Manager의 Canvas에 관리되는 Kubernetes 클러스터를 추가할 수 있습니다.</block>
   <block id="9bc9d366922b7839c22a9d3f44b59ab5" category="list-text">Amazon EKS 클러스터를 찾아보십시오</block>
@@ -228,9 +225,7 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="32fc9c6f3a293194ff9fde5db876cbb6" category="section-title">2022년 4월 4일</block>
   <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">Cloud Manager 리소스 페이지를 사용하여 Kubernetes 클러스터를 관리합니다</block>
-  <block id="26d6d7c2307bf3cf565d0e8283db031d" category="list-text">이제 Kubernetes 클러스터 관리가 클러스터 작업 환경과의 통합을 직접 개선했습니다. 이제 클러스터 리소스 페이지에서 다음 작업을 수행할 수 있습니다.</block>
   <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">Astra Trident를 설치합니다</block>
   <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
   <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">스토리지 클래스를 추가합니다</block>
@@ -241,11 +236,9 @@
   <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
   <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">빠른 시작</block>
-  <block id="2caed3e1483d538b0b868d278bd53949" category="list-text">새로운 소식 <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> 빠르게 설치하고 실행할 수 있습니다.</block>
   <block id="4e6d8a21fe823b1687cc8c006854102e" category="paragraph">Kubernetes 클러스터를 Cloud Manager로 검색 또는 임포트하여 영구 볼륨을 Amazon S3에 백업할 수 있습니다.</block>
   <block id="56a8cd5372dfc93abbb885fc864189bf" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 호환되는 Astra Trident 설치를 확인하거나 Astra Trident를 설치할 수 있습니다. Astra Trident의 최신 버전 4개 중 하나가 필요합니다.</block>
   <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident 문서</block>
-  <block id="8600dce42208e643e9f3e0a996c90220" category="paragraph">Astra Trident에 대한 자세한 내용은 을 참조하십시오 <block ref="2b8a155fc083396b96b18cee0ba5eab0" category="inline-link-macro-rx"></block>.</block>
   <block id="703b6be9eec96bb49a157de2a1ae70ae" category="admonition">Astra Trident가 설치되지 않았거나 호환되지 않는 버전의 Astra Trident가 설치된 경우 클러스터에 필요한 조치가 표시됩니다.</block>
   <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.</block>
   <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">Astra Trident가 설치되지 않은 경우 * Install Trident * 를 클릭합니다.</block>
@@ -304,21 +297,14 @@
   <block id="afd76a0ed7f0f829a9fddbc272ab6299" category="paragraph">선택한 저장소 클래스가 제거됩니다.</block>
   <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 NetApp 클라우드 데이터 서비스를 사용하여 고급 데이터 관리를 수행할 수 있습니다.</block>
   <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">Kubernetes 클러스터에서 NetApp 클라우드 데이터 서비스 사용</block>
-  <block id="159a2c61a2d800a03c28121597f3f775" category="paragraph"><block ref="c231e29babf1a493836bb058a52173d8" category="inline-link-macro-rx"></block>.</block>
   <block id="09bb0b2da16893a3eff055a9d40e2794" category="summary">Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이터 관리를 몇 가지 간단한 단계로 수행할 수 있습니다.</block>
   <block id="79e470c48afbbe1fa9e042e6403d2459" category="doc">Kubernetes 클러스터 시작</block>
   <block id="6c5ac2a580024aab98e753e5c4dc264c" category="paragraph">다음 단계를 수행하여 빠르게 시작하십시오.</block>
   <block id="2fadcb7c66778a6e996282a9d85d69d3" category="paragraph">환경이 클러스터 유형의 사전 요구 사항을 충족하는지 확인합니다.</block>
-  <block id="91371b061c7d73513ec2d8334d74507a" category="paragraph"><block ref="91371b061c7d73513ec2d8334d74507a" category="inline-link-macro-rx"></block></block>
-  <block id="8ef69472e0bf92730a0f3921c882ccd5" category="paragraph"><block ref="8ef69472e0bf92730a0f3921c882ccd5" category="inline-link-macro-rx"></block></block>
-  <block id="30cbb99c1fb544a739a33f3089a4207a" category="paragraph"><block ref="30cbb99c1fb544a739a33f3089a4207a" category="inline-link-macro-rx"></block></block>
   <block id="822d28ac02a6b0c333bf3eabab847e14" category="paragraph">Cloud Manager를 사용하여 Kubernetes 클러스터를 추가하고 작업 환경에 연결할 수 있습니다.</block>
   <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link-macro">Amazon Kubernetes 클러스터를 추가합니다</block>
-  <block id="58edfe2caca070b44396387dc8c34d0d" category="paragraph"><block ref="58edfe2caca070b44396387dc8c34d0d" category="inline-link-macro-rx"></block></block>
   <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link-macro">Azure Kubernetes 클러스터를 추가합니다</block>
-  <block id="e9c72c951b20431e1caafe9920ac0b62" category="paragraph"><block ref="e9c72c951b20431e1caafe9920ac0b62" category="inline-link-macro-rx"></block></block>
   <block id="2872769900c1ca485d1628b4eefde308" category="inline-link-macro">Google Cloud Kubernetes 클러스터를 추가합니다</block>
-  <block id="ec22f19404cd18f489ae10e70492134a" category="paragraph"><block ref="ec22f19404cd18f489ae10e70492134a" category="inline-link-macro-rx"></block></block>
   <block id="c5ea1d5f2f35adec1d872ec686a8c040" category="paragraph">네이티브 Kubernetes 인터페이스 및 구조를 사용하여 영구 볼륨을 요청 및 관리합니다. Cloud Manager는 영구 볼륨을 프로비저닝할 때 사용할 수 있는 NFS 및 iSCSI 스토리지 클래스를 생성합니다.</block>
   <block id="fc0f20615e6c250961a9e88b2929444b" category="inline-link-macro">Astra Trident를 사용하여 첫 번째 볼륨을 프로비저닝하는 방법에 대해 자세히 알아보십시오</block>
   <block id="28eb70a7fd7de45b7957d03e5f3d4554" category="paragraph"><block ref="439da74acd283499ba63209cd4e1e52e" category="inline-link-macro-rx"></block>.</block>
@@ -343,19 +329,14 @@
   <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다.</block>
   <block id="d309ea6b2fbd918f1d33db3b349ce70e" category="paragraph">Cloud Manager는 다음과 같은 환경에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.</block>
   <block id="46a72d9af542e3e84ec5f5f3a72f54c1" category="inline-link-macro">Amazon Elastic Kubernetes Service(Amazon EKS)</block>
-  <block id="7686fcee34a9e771a02c0b8615f7751b" category="list-text"><block ref="7686fcee34a9e771a02c0b8615f7751b" category="inline-link-macro-rx"></block></block>
   <block id="f3bd1985b243e9691bbbd63c6702344b" category="inline-link-macro">Microsoft Azure Kubernetes Service(AKS)</block>
-  <block id="dcb1c5115f00a4ce733e979d31754406" category="list-text"><block ref="dcb1c5115f00a4ce733e979d31754406" category="inline-link-macro-rx"></block></block>
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine(GKE)</block>
-  <block id="b987f0a825761c9e56972aa39ef676f8" category="list-text"><block ref="b987f0a825761c9e56972aa39ef676f8" category="inline-link-macro-rx"></block></block>
   <block id="213acaa88814071409958acdc9192518" category="section-title">Astra Trident 구축을 지원했습니다</block>
   <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">사전 요구 사항을 검토합니다</block>
   <block id="e244dca7cd711ef2b227bcd422cd641e" category="paragraph">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 설치 전.</block>
   <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">운영자와 함께 업그레이드하십시오</block>
   <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">Astra Trident를 업그레이드하려면 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>.</block>
   <block id="c4541926fe853a3614406482ac212fff" category="list-text">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident를 설치하기 전</block>
-  <block id="f404e9d0235ae9dbfd304a568ea59510" category="list-text"><block ref="03eaf10395ef9e3efad62cf1e4438d2a" category="inline-link-macro-rx"></block> (권장)</block>
-  <block id="446e449228d00ad435a264295f1e0158" category="list-text"><block ref="446e449228d00ad435a264295f1e0158" category="inline-link-macro-rx"></block></block>
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">백업 및 복원</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">백업 및 복원에는 기본 인증만 필요합니다.</block>
   <block id="589cddcfb97ddd817654b8448e583560" category="list-text">Cloud Manager를 사용하여 스토리지 클래스를 추가하려면 확장된 인증이 필요합니다.</block>
@@ -370,12 +351,7 @@
   <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">Trident를 설치합니다</block>
   <block id="47b31bee79140af784a118e6eb34fdbd" category="paragraph">명령줄을 사용하여 전체 인증을 제공하고 Cloud Manager에서 Astra Trident를 설치할 수 있도록 합니다.</block>
   <block id="74ac826b742735257c4c43faffe62b41" category="list-text">Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident를 설치하기 전</block>
-  <block id="f89e07a755c721ce8e7e3c8eed5f0f13" category="list-text"><block ref="e4079d926604a2f5b999934a2d4f26d7" category="inline-link-macro-rx"></block> (권장)</block>
-  <block id="f994827af963c9b45fb8cbbe74adc22c" category="list-text"><block ref="f994827af963c9b45fb8cbbe74adc22c" category="inline-link-macro-rx"></block></block>
   <block id="05a0030833e70e4af624c3716f988104" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다. 'Subjects:kind:' 변수를 사용자 이름으로 바꾸고 'Subjects:user:'를 위에서 설명한 대로 시스템에서 할당한 관리 ID의 개체 ID 또는 권한이 있는 사용자의 사용자 이름으로 바꿉니다.</block>
-  <block id="d8504168dbe366f1ffe49a77a72eacda" category="list-text"><block ref="c55a72352b8cc03452bbfc87fde8900e" category="inline-link-macro-rx"></block> (권장)</block>
-  <block id="8b279013423512c41be32334a5cc81ec" category="list-text"><block ref="8b279013423512c41be32334a5cc81ec" category="inline-link-macro-rx"></block></block>
-  <block id="9f5e2bf1b2647c62e7ea24017cc08df2" category="list-text"><block ref="9f5e2bf1b2647c62e7ea24017cc08df2" category="inline-link-macro-rx"></block></block>
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">다른 기능을 사용하려면 다른 권한이 필요합니다.</block>
   <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다.</block>
@@ -394,4 +370,28 @@
   <block id="c83be9d30dd0d8b55fb8bdbf6f11eb85" category="inline-link-macro">NetApp 클라우드 데이터 서비스를 사용해 보십시오</block>
   <block id="5988e88f080603d109047fd28346431d" category="list-text">Cloud Backup을 활성화하거나 봅니다. 을 참조하십시오 <block ref="970aaadca61cb9a29c8e2b76716ffafe" category="inline-link-macro-rx"></block>.</block>
   <block id="33729732e4c013e81e5576920fedbc76" category="sidebar">NetApp 클라우드 데이터 서비스 지원</block>
+  <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022년 4월 4일</block>
+  <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">이제 Kubernetes 클러스터 관리가 클러스터 작업 환경과의 통합을 직접 개선했습니다. 새로운 소식 <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> 빠르게 설치하고 실행할 수 있습니다.</block>
+  <block id="4e9fabf2f81510967e324cfc9c54b640" category="paragraph">이제 클러스터 리소스 페이지에서 다음 작업을 수행할 수 있습니다.</block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022년 2월 27일</block>
+  <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022년 1월 11일</block>
+  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021년 11월 28일</block>
+  <block id="49884bb39e4730239c5590a42f88d306" category="paragraph">Astra Trident에 대한 자세한 내용은 을 참조하십시오 <block ref="d243cca937364184efa824b0525b876a" category="inline-link-macro-rx"></block>.</block>
+  <block id="6fbf44e98207180f6dea3f48ebff3214" category="paragraph"><block ref="5f51a9553940e8daed7fd1ec3a5d3f5a" category="inline-link-macro-rx"></block>.</block>
+  <block id="72cf03e83eb761652a0d13086f72c9d7" category="paragraph"><block ref="72cf03e83eb761652a0d13086f72c9d7" category="inline-link-macro-rx"></block></block>
+  <block id="4a485bbe8e1857cd9e015d159f30b24d" category="paragraph"><block ref="4a485bbe8e1857cd9e015d159f30b24d" category="inline-link-macro-rx"></block></block>
+  <block id="a29db47c768f9047aab40d9abfb20adb" category="paragraph"><block ref="a29db47c768f9047aab40d9abfb20adb" category="inline-link-macro-rx"></block></block>
+  <block id="1cc3b91ac3f47d8a34620fe828068db4" category="paragraph"><block ref="1cc3b91ac3f47d8a34620fe828068db4" category="inline-link-macro-rx"></block></block>
+  <block id="6ba362adaf84a4c90e3a5e2018f325f2" category="paragraph"><block ref="6ba362adaf84a4c90e3a5e2018f325f2" category="inline-link-macro-rx"></block></block>
+  <block id="cfc29f6918b9699178c2eb110f408c5c" category="paragraph"><block ref="cfc29f6918b9699178c2eb110f408c5c" category="inline-link-macro-rx"></block></block>
+  <block id="139fb1a5c65daf5441e1ede5235a21de" category="list-text"><block ref="139fb1a5c65daf5441e1ede5235a21de" category="inline-link-macro-rx"></block></block>
+  <block id="d5f34ac67d70bd0953fb12248b0a1e2b" category="list-text"><block ref="d5f34ac67d70bd0953fb12248b0a1e2b" category="inline-link-macro-rx"></block></block>
+  <block id="78b8a8015761a257c74b564dd2abedb7" category="list-text"><block ref="78b8a8015761a257c74b564dd2abedb7" category="inline-link-macro-rx"></block></block>
+  <block id="409fc503ea2d6bb152d59bd69bc62da1" category="list-text"><block ref="64d8cd637ec67c4c29a88e65debc8c1c" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="f2b4c219933d07cd50ec18d34e212cb0" category="list-text"><block ref="f2b4c219933d07cd50ec18d34e212cb0" category="inline-link-macro-rx"></block></block>
+  <block id="df1c09f38cb6ed31cef1e1ebdd55725b" category="list-text"><block ref="6ec6dd68b99ef46ea5ce712a62b5fa12" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="c325ade42558e45e83dbb26c3b2d99f2" category="list-text"><block ref="c325ade42558e45e83dbb26c3b2d99f2" category="inline-link-macro-rx"></block></block>
+  <block id="cd6ebc8356b1da3789ba04ae3e5aaea3" category="list-text"><block ref="aa0dc252414fb173eaea918703c4a84f" category="inline-link-macro-rx"></block> (권장)</block>
+  <block id="946fbd834f2d7dd02243acdd3cd2af41" category="list-text"><block ref="946fbd834f2d7dd02243acdd3cd2af41" category="inline-link-macro-rx"></block></block>
+  <block id="6daf52898d494bb924b8e794cabb00ca" category="list-text"><block ref="6daf52898d494bb924b8e794cabb00ca" category="inline-link-macro-rx"></block></block>
 </blocks>

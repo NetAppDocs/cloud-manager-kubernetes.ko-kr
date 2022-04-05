@@ -17,6 +17,6 @@ Canvas에 Managed-Kubernetes 클러스터를 추가한 후 NetApp 클라우드 �
 
 현재 Cloud Backup은 Kubernetes 클러스터에서 지원됩니다. Cloud Backup을 사용하여 영구 볼륨을 오브젝트 스토리지에 백업할 수 있습니다.
 
-link:task_backup_kubernetes_to_s3.html["영구 볼륨을 백업하는 방법을 알아보려면 Cloud Backup 문서로 이동합니다"].
+link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-s3.html["영구 볼륨을 백업하는 방법을 알아보려면 Cloud Backup 문서로 이동합니다"^].
 
 image:screenshot-kubernetes-backup.png["Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷"]
