@@ -134,7 +134,7 @@ Kubernetes 클러스터의 백업 및 복원을 위한 기본 인증을 추가�
 
 [source, yaml]
 ----
-NEED FROM apiVersion: rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
     name: cloudmanager-access-clusterrole
