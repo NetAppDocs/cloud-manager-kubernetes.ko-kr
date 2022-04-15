@@ -6,6 +6,7 @@ summary: Cloud Manager를 사용하여 Astra Trident를 설치하고, 스토리�
 ---
 = Kubernetes 클러스터 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

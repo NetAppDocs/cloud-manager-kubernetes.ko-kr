@@ -6,6 +6,7 @@ summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 NetApp 클�
 ---
 = Kubernetes 클러스터에서 NetApp 클라우드 데이터 서비스 사용
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

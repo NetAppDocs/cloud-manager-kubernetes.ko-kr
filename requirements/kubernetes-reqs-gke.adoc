@@ -6,6 +6,7 @@ summary: 'Cloud Manager를 사용하여 Google에서 관리 Google Kubernetes En
 ---
 = Google Cloud의 Kubernetes 클러스터 요구사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

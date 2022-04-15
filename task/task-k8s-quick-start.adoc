@@ -6,6 +6,7 @@ summary: Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이�
 ---
 = Kubernetes 클러스터 시작
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

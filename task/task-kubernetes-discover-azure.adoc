@@ -6,6 +6,7 @@ summary: Cloud Manager에 Kubernetes 클러스터를 추가하여 영구 볼륨�
 ---
 = Cloud Manager에 Azure Kubernetes 클러스터를 추가합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

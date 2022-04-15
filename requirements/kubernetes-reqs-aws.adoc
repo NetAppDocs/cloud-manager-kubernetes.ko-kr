@@ -6,6 +6,7 @@ summary: 'Cloud Manager에 Amazon EKS(Amazon Elastic Kubernetes Service) 클러�
 ---
 = AWS의 Kubernetes 클러스터 요구사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

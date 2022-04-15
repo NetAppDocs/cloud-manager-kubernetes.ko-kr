@@ -6,6 +6,7 @@ summary: 'Amazon Elastic Kubernetes Service(Amazon EKS) 클러스터를 Cloud Ma
 ---
 = Cloud Manager에 Amazon Kubernetes 클러스터를 추가합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

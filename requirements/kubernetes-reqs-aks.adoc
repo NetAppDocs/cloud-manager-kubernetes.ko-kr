@@ -6,6 +6,7 @@ summary: 'Cloud Manager를 사용하여 Azure에서 관리되는 Azure Kubernete
 ---
 = Azure의 Kubernetes 클러스터 요구사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

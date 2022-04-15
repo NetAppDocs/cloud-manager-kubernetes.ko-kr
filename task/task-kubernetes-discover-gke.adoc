@@ -6,6 +6,7 @@ summary: Kubernetes 클러스터를 Cloud Manager로 검색 또는 임포트하�
 ---
 = Cloud Manager에 Google Cloud Kubernetes 클러스터를 추가합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

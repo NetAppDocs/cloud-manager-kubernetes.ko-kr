@@ -68,7 +68,7 @@ homepage:
     - title: Kubernetes 데이터 관리에 대해 자세히 알아보십시오
       url: "/concept-kubernetes.html"
     - title: 빠른 시작
-      url: "/task-k8s-quick-start.html"
+      url: "/task/task-k8s-quick-start.html"
   - title: 요구 사항
     links:
     - title: AWS 기반 Kubernetes 클러스터

@@ -6,6 +6,7 @@ summary: Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공�
 ---
 = Cloud Manager의 Kubernetes 데이터 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manage
 ---
 = 영구 볼륨 보기
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
