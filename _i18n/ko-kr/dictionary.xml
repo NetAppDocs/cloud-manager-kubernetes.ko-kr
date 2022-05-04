@@ -252,11 +252,6 @@
   <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes 클러스터가 작업 공간에서 제거되어 Canvas에 더 이상 표시되지 않습니다.</block>
   <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 스토리지 클래스를 관리할 수 있습니다.</block>
   <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="doc">스토리지 클래스를 관리합니다</block>
-  <block id="76a5809985aa691391b31d5f20c17a42" category="admonition">스토리지 클래스가 정의되어 있지 않으면 클러스터에 필요한 작업이 표시됩니다.</block>
-  <block id="8e79c25356bb563e28e9ae0a108b960b" category="list-text">4가지 최신 버전의 Astra Trident 중 하나가 설치되었는지 확인합니다.</block>
-  <block id="af1dab031c2b915817ef7d5169fdfcfb" category="list-text">Kubernetes 클러스터의 스토리지 클래스를 정의하려면 * 스토리지 클래스 추가 * 를 클릭합니다.</block>
-  <block id="790a7b05e43ed5454554eef9671154f0" category="inline-image-macro">스토리지 클래스 추가 버튼을 보여 주는 K8s 리소스 페이지의 스크린샷</block>
-  <block id="bac110b30291a86e52ffa944c5ba6bb5" category="paragraph"><block ref="bac110b30291a86e52ffa944c5ba6bb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">스토리지 클래스의 이름을 입력하고 정의 옵션을 선택한 후 * 다음 * 을 클릭합니다.</block>
   <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">K8s 스토리지 클래스에 대한 정의 옵션을 보여 주는 스크린샷</block>
   <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -440,4 +435,11 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
+  <block id="f03623a9e2b73dcb7ae9b7b837190c39" category="section-title">2022년 5월 8일</block>
+  <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">끌어서 놓기로 스토리지 클래스를 추가합니다</block>
+  <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">이제 Kubernetes 클러스터를 Cloud Volumes ONTAP 작업 환경에 끌어다 놓아 Canvas에서 직접 스토리지 클래스를 추가할 수 있습니다.</block>
+  <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">스토리지 클래스를 추가합니다</block>
+  <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
+  <block id="1eec33c68401a6eebb58a392153f045b" category="admonition">스토리지 클래스가 정의되지 않은 경우 클러스터에 필요한 작업이 표시됩니다. Canvas에서 클러스터를 두 번 클릭하면 작업 페이지가 열려 스토리지 클래스를 추가합니다.</block>
+  <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">Canvas에서 Cloud Volumes ONTAP 작업 환경의 Kubernetes 작업 환경을 끌어다 놓아 스토리지 클래스 마법사를 엽니다.</block>
 </blocks>
