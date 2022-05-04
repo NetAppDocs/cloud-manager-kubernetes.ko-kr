@@ -435,11 +435,11 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
-  <block id="f03623a9e2b73dcb7ae9b7b837190c39" category="section-title">2022년 5월 8일</block>
   <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">끌어서 놓기로 스토리지 클래스를 추가합니다</block>
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">이제 Kubernetes 클러스터를 Cloud Volumes ONTAP 작업 환경에 끌어다 놓아 Canvas에서 직접 스토리지 클래스를 추가할 수 있습니다.</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">스토리지 클래스를 추가합니다</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
   <block id="1eec33c68401a6eebb58a392153f045b" category="admonition">스토리지 클래스가 정의되지 않은 경우 클러스터에 필요한 작업이 표시됩니다. Canvas에서 클러스터를 두 번 클릭하면 작업 페이지가 열려 스토리지 클래스를 추가합니다.</block>
   <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">Canvas에서 Cloud Volumes ONTAP 작업 환경의 Kubernetes 작업 환경을 끌어다 놓아 스토리지 클래스 마법사를 엽니다.</block>
+  <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022년 5월 4일</block>
 </blocks>
