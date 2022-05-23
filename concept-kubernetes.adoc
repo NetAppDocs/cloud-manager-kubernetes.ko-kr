@@ -34,9 +34,9 @@ Cloud Manager를 사용하여 Kubernetes 클러스터를 직접 관리할 수 �
 
 Cloud Manager는 다음과 같은 환경에서 실행되는 관리형 Kubernetes 클러스터를 지원합니다.
 
-* link:/requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service(Amazon EKS)"]
-* link:/requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service(AKS)"]
-* link:/requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine(GKE)"]
+* link:./requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service(Amazon EKS)"]
+* link:./requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service(AKS)"]
+* link:./requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine(GKE)"]
 
 
 
