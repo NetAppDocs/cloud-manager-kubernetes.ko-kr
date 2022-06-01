@@ -341,7 +341,6 @@
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">다른 기능을 사용하려면 다른 권한이 필요합니다.</block>
   <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">귀하의 승인 요구 사항에 따라 다음 텍스트가 포함된 YAML 파일을 생성합니다.</block>
-  <block id="e4e88e99e021b78e80ca0c688485ea20" category="list-text">eksctl을 사용하여 권한 그룹에 대한 ID 매핑을 만듭니다. 아래에 예가 나와 있습니다.</block>
   <block id="fe56eccd77db48009fae1416eb34f4bd" category="summary">Cloud Manager를 사용하여 Astra Trident를 설치하고, 스토리지 클래스를 구성하고, 클러스터를 제거하고, 데이터 서비스를 활성화할 수 있습니다.</block>
   <block id="384b71db954a7a463c759208283e47c4" category="doc">Kubernetes 클러스터 관리</block>
   <block id="7e60eeaefc6a3c5fb637acd03070a64a" category="paragraph">Kubernetes 클러스터를 Cloud Manager에 추가한 후에는 리소스 페이지에서 클러스터를 관리할 수 있습니다. 리소스 페이지를 열려면 Canvas에서 Kubernetes 작업 환경을 두 번 클릭합니다.</block>
@@ -442,4 +441,12 @@
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
   <block id="df02ebf4bbdbd23dcf4001f89e193718" category="list-text"><block ref="df02ebf4bbdbd23dcf4001f89e193718" category="inline-link-macro-rx"></block></block>
   <block id="0d66e7de3df254882c2f4ec49e44ba2f" category="list-text"><block ref="0d66e7de3df254882c2f4ec49e44ba2f" category="inline-link-macro-rx"></block></block>
+  <block id="f08cfbb10dc9216a72c9d59da3c626b8" category="list-text">권한 그룹에 대한 ID 매핑을 만듭니다.</block>
+  <block id="bcac99b7c9956d05f17a4e4f9649da71" category="open-title">eksctl을 사용합니다</block>
+  <block id="f7e12246f1ebd24c7f1a6460919e9bd3" category="paragraph">eksctl을 사용하여 클러스터와 Cloud Manager Connector의 IAM 역할 사이에 IAM ID 매핑을 생성합니다.</block>
+  <block id="13225b5885ac45d1b5d3019c9de2e513" category="paragraph">아래에 예가 나와 있습니다.</block>
+  <block id="a36cee8f656cd9e61ae5593885084071" category="open-title">AWS-auth를 편집합니다</block>
+  <block id="de4e940a00cd2a48720f3f12fb53e9a7" category="paragraph">AWS-auth ConfigMap을 직접 편집하여 RBAC 액세스를 Cloud Manager Connector의 IAM 역할에 추가합니다.</block>
+  <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">전체 지침은 AWS EKS 설명서를 참조하십시오</block>
+  <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>.</block>
 </blocks>

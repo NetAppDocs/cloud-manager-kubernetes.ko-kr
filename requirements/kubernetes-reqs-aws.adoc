@@ -277,13 +277,49 @@ kubectl apply -f <file-name>
 ----
 
 
-. eksctl을 사용하여 권한 그룹에 대한 ID 매핑을 만듭니다. 아래에 예가 나와 있습니다.
+. 권한 그룹에 대한 ID 매핑을 만듭니다.
 +
+[role="tabbed-block"]
+====
+.eksctl을 사용합니다
+--
+eksctl을 사용하여 클러스터와 Cloud Manager Connector의 IAM 역할 사이에 IAM ID 매핑을 생성합니다.
+
+https://eksctl.io/usage/iam-identity-mappings/["전체 지침은 eksctl 설명서를 참조하십시오"^].
+
+아래에 예가 나와 있습니다.
+
 [source, eksctl]
 ----
 eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --arn <ARN of the Connector IAM role> --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}
 ----
-+
-https://eksctl.io/usage/iam-identity-mappings/["전체 지침은 eksctl 설명서를 참조하십시오"^].
+--
+.AWS-auth를 편집합니다
+--
+AWS-auth ConfigMap을 직접 편집하여 RBAC 액세스를 Cloud Manager Connector의 IAM 역할에 추가합니다.
 
+https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html["전체 지침은 AWS EKS 설명서를 참조하십시오"^].
+
+아래에 예가 나와 있습니다.
+
+[source, yaml]
+----
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: <ARN of the Connector IAM role>
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c
+----
+--
+====
 
