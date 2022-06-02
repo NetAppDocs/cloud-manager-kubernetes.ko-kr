@@ -7,6 +7,19 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  filter:
+    label: 클라우드 공급자
+    default: 모든 클라우드 공급자
+    options:
+    - name: Amazon Web Services에서 직접 지원합니다
+      alias: 설치하고
+      id: aws
+    - name: Google 클라우드
+      alias: Google 클라우드
+      id: gcp
+    - name: Microsoft Azure를 참조하십시오
+      alias: Azure를 지원합니다
+      id: azure
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
@@ -25,18 +38,24 @@ sidebar:
   - title: 요구 사항
     entries:
     - title: AWS 기반 Kubernetes 클러스터
+      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure의 Kubernetes 클러스터
+      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud의 Kubernetes 클러스터
+      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: Kubernetes 클러스터 추가
     entries:
     - title: AWS에서 클러스터 추가
+      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: Azure에서 클러스터 추가
+      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud에서 클러스터를 추가합니다
+      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: Kubernetes 클러스터 관리
     url: "/concept-manage-k8s.html"
@@ -72,18 +91,24 @@ homepage:
   - title: 요구 사항
     links:
     - title: AWS 기반 Kubernetes 클러스터
+      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure의 Kubernetes 클러스터
+      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud의 Kubernetes 클러스터
+      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: Kubernetes 클러스터 추가
     links:
     - title: AWS에서 클러스터 추가
+      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: Azure에서 클러스터 추가
+      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud에서 클러스터를 추가합니다
+      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: Kubernetes 클러스터 관리
     links:

@@ -25,26 +25,50 @@ Kubernetes 클러스터를 Cloud Manager에 추가하여 고급 데이터 관리
 [role="quick-margin-para"]
 환경이 클러스터 유형의 사전 요구 사항을 충족하는지 확인합니다.
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS의 Kubernetes 클러스터 요구사항"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure의 Kubernetes 클러스터 요구사항"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS의 Kubernetes 클러스터 요구사항"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud의 Kubernetes 클러스터 요구사항"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure의 Kubernetes 클러스터 요구사항"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud의 Kubernetes 클러스터 요구사항"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 Cloud Manager를 사용하여 Kubernetes 클러스터를 추가하고 작업 환경에 연결할 수 있습니다.
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes 클러스터를 추가합니다"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes 클러스터를 추가합니다"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes 클러스터를 추가합니다"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes 클러스터를 추가합니다"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes 클러스터를 추가합니다"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes 클러스터를 추가합니다"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 네이티브 Kubernetes 인터페이스 및 구조를 사용하여 영구 볼륨을 요청 및 관리합니다. Cloud Manager는 영구 볼륨을 프로비저닝할 때 사용할 수 있는 NFS 및 iSCSI 스토리지 클래스를 생성합니다.
