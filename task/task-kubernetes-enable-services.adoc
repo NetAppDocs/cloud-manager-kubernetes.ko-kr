@@ -20,4 +20,4 @@ Canvas에 Managed-Kubernetes 클러스터를 추가한 후 NetApp 클라우드 �
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["Cloud Backup을 사용하여 Kubernetes 클러스터 데이터를 보호하는 방법에 대해 알아보십시오"^].
 
-image:screenshot-kubernetes-backup.png["Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷"]
+image:screenshot-k8s-backup.png["Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷"]

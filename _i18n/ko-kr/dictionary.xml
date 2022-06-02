@@ -16,7 +16,6 @@
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">기존 Kubernetes 서비스(* K8s* 탭을 통해 사용 가능)는 더 이상 사용되지 않으며 향후 릴리즈에서 제거될 예정입니다.</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷</block>
-  <block id="fdd5390b518e6b0ee63a9f6d25352e4d" category="paragraph"><block ref="fdd5390b518e6b0ee63a9f6d25352e4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="acb13b8754d0f14e58090cb4826d589f" category="section-title">지원되는 Kubernetes 구축</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">백엔드 스토리지를 지원합니다</block>
   <block id="55a560dfd687efd2106430144cfa5892" category="paragraph">NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.</block>
@@ -257,7 +256,6 @@
   <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">클러스터에 연결할 작업 환경을 선택합니다. 추가 * 를 클릭합니다.</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">Kubernetes 클러스터의 작업 환경 선택을 보여 주는 스크린샷</block>
-  <block id="f99a712980063704c4a584a6683234a2" category="paragraph"><block ref="f99a712980063704c4a584a6683234a2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">클릭하여 Kubernetes 클러스터의 리소스 페이지에서 스토리지 클래스를 볼 수 있습니다.</block>
   <block id="24d4e555e1f7b6ed662909980cd4b88c" category="inline-image-macro">Kubernetes 리소스 페이지의 "스토리지 클래스 보기"를 보여 주는 스크린샷</block>
   <block id="a770b061844a8f658a79e0452983186e" category="paragraph"><block ref="a770b061844a8f658a79e0452983186e" category="inline-image-macro-rx" type="image"></block></block>
@@ -462,4 +460,6 @@
   <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
   <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
+  <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -31,7 +31,7 @@ image:screenshot-k8s-define-storage-class.png["K8s 스토리지 클래스에 대
 
 . 클러스터에 연결할 작업 환경을 선택합니다. 추가 * 를 클릭합니다.
 +
-image:screenshot-k8s-we-storage-class.png["Kubernetes 클러스터의 작업 환경 선택을 보여 주는 스크린샷"]
+image:screenshot-k8s-select-storage-class.png["Kubernetes 클러스터의 작업 환경 선택을 보여 주는 스크린샷"]
 
 
 
