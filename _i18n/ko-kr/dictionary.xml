@@ -195,8 +195,6 @@
   <block id="bb45c01f0defa7d4025530e60da27413" category="list-text">Kubernetes 클러스터 관리자가 제공한 클러스터 인증서를 업로드합니다.</block>
   <block id="88191bdb31785cfc9f3930579c08bc01" category="inline-image-macro">인증 기관, 클라이언트 키 및 클라이언트 인증서 인증서를 업로드하는 데 사용되는 클러스터 인증서 페이지의 스크린샷</block>
   <block id="590894349703ecdfd70867c311b0ca06" category="paragraph"><block ref="590894349703ecdfd70867c311b0ca06" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
-  <block id="f583f925a6121ffc465f204cf97e47f2" category="sidebar">Kubernetes 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
   <block id="9a389df4347e021124f6973de0521d46" category="sidebar">Kubernetes 데이터 관리에 대해 자세히 알아보십시오</block>
@@ -427,7 +425,6 @@
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">이제 Kubernetes 클러스터를 Cloud Volumes ONTAP 작업 환경에 끌어다 놓아 Canvas에서 직접 스토리지 클래스를 추가할 수 있습니다.</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">스토리지 클래스를 추가합니다</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
-  <block id="1eec33c68401a6eebb58a392153f045b" category="admonition">스토리지 클래스가 정의되지 않은 경우 클러스터에 필요한 작업이 표시됩니다. Canvas에서 클러스터를 두 번 클릭하면 작업 페이지가 열려 스토리지 클래스를 추가합니다.</block>
   <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">Canvas에서 Cloud Volumes ONTAP 작업 환경의 Kubernetes 작업 환경을 끌어다 놓아 스토리지 클래스 마법사를 엽니다.</block>
   <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022년 5월 4일</block>
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
@@ -462,4 +459,6 @@
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">스토리지 클래스가 정의되지 않은 경우 클러스터에 필요한 작업이 표시됩니다. Canvas에서 클러스터를 두 번 클릭하면 작업 페이지가 열려 스토리지 클래스를 추가합니다.</block>
+  <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetes 클러스터 문서</block>
 </blocks>
