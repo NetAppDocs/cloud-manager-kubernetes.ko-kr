@@ -51,7 +51,7 @@ Astra Trident를 업그레이드하려면 link:https://docs.netapp.com/us-en/tri
 
 == 백엔드 스토리지를 지원합니다
 
-NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.
+NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP 또는 ONTAP용 Amazon FSx는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.
 
 
 

@@ -18,7 +18,6 @@
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Kubernetes 클러스터의 5가지 백업 작업이 나와 있는 Cloud Backup Service의 Kubernetes 페이지 스크린샷</block>
   <block id="acb13b8754d0f14e58090cb4826d589f" category="section-title">지원되는 Kubernetes 구축</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">백엔드 스토리지를 지원합니다</block>
-  <block id="55a560dfd687efd2106430144cfa5892" category="paragraph">NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
   <block id="57d339f02c71bab84597b5d0376d3fc5" category="paragraph">Cloud Manager에서 Kubernetes 클러스터를 _DISTANGE_사용하는 비용은 없지만 Cloud Backup Service를 사용하여 영구 볼륨을 백업할 경우 비용이 청구됩니다.</block>
   <block id="857ece793bdfd4681e9906a6a9eb9083" category="summary">Cloud Manager에 Amazon EKS(Amazon Elastic Kubernetes Service) 클러스터를 추가하려면 먼저 다음 요구사항이 충족되는지 확인해야 합니다.</block>
@@ -461,4 +460,7 @@
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">스토리지 클래스가 정의되지 않은 경우 클러스터에 필요한 작업이 표시됩니다. Canvas에서 클러스터를 두 번 클릭하면 작업 페이지가 열려 스토리지 클래스를 추가합니다.</block>
   <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetes 클러스터 문서</block>
+  <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022년 6월 6일</block>
+  <block id="cd6d587cb36421715f3cc24a2c91aef6" category="paragraph">Cloud Manager는 이제 백엔드 스토리지로 ONTAP용 Amazon FSx를 지원합니다.</block>
+  <block id="f0b34badcd6be375b0501deb67b70346" category="paragraph">NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP 또는 ONTAP용 Amazon FSx는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.</block>
 </blocks>
