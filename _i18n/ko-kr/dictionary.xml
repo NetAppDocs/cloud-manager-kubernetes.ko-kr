@@ -463,4 +463,8 @@
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022년 6월 6일</block>
   <block id="cd6d587cb36421715f3cc24a2c91aef6" category="paragraph">Cloud Manager는 이제 백엔드 스토리지로 ONTAP용 Amazon FSx를 지원합니다.</block>
   <block id="f0b34badcd6be375b0501deb67b70346" category="paragraph">NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP 또는 ONTAP용 Amazon FSx는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.</block>
+  <block id="624105df248e28f049a2f58eb3552d40" category="list-text">EC2: 설명</block>
+  <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS: ListClusters</block>
+  <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS: DescribeCluster</block>
+  <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM:GetInstanceProfile 을 참조하십시오</block>
 </blocks>
