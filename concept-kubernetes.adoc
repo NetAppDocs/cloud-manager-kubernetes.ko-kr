@@ -20,9 +20,9 @@ Astra Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오�
 
 == 피처
 
-Cloud Manager를 사용하여 Kubernetes 클러스터를 직접 관리할 수 있습니다.
+Trident 운영자를 사용해 구축된 Astra Trident의 호환 버전을 사용하면 Cloud Manager를 사용하여 Kubernetes 클러스터를 직접 관리할 수 있습니다.
 
-* Astra Trident를 설치합니다.
+* Astra Trident를 설치하거나 업그레이드합니다.
 * 하이브리드 클라우드 인프라의 일부로 클러스터를 추가하고 관리합니다.
 * 스토리지 클래스를 추가 및 관리하고 작업 환경에 연결합니다.
 * Cloud Backup Service를 사용하여 영구 볼륨을 백업합니다.
@@ -43,15 +43,17 @@ Cloud Manager는 다음과 같은 환경에서 실행되는 관리형 Kubernetes
 
 == Astra Trident 구축을 지원했습니다
 
-Astra Trident의 최신 버전 4개 중 하나가 필요합니다. Cloud Manager에서 Astra Trident를 직접 설치할 수 있습니다. 당신은 해야 한다 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["사전 요구 사항을 검토합니다"^] 설치 전.
+Astra Trident의 최신 버전 4개 중 하나 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident 연산자를 사용하여 배포됩니다"^] 필수 항목입니다.
 
-Astra Trident를 업그레이드하려면 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["운영자와 함께 업그레이드하십시오"^].
+Cloud Manager에서 직접 Astra Trident의 최신 버전을 설치하거나 업그레이드할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["Astra Trident 사전 요구 사항을 검토합니다"^]
 
 
 
 == 백엔드 스토리지를 지원합니다
 
-NetApp의 Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP 또는 ONTAP용 Amazon FSx는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.
+NetApp Astra Trident는 각 Kubernetes 클러스터에 설치해야 하며, Cloud Volumes ONTAP 또는 ONTAP용 Amazon FSx는 클러스터를 위한 백엔드 스토리지로 구성해야 합니다.
 
 
 

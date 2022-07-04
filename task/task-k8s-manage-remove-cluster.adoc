@@ -14,7 +14,7 @@ summary: Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manage
 
 
 [role="lead"]
-Canvas에 Managed-Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 작업 공간에서 클러스터를 제거할 수 있습니다.
+Canvas에 관리되는 Kubernetes 클러스터를 추가한 후 Cloud Manager를 사용하여 작업 공간에서 클러스터를 제거할 수 있습니다.
 
 .단계
 . Canvas에서 Kubernetes 작업 환경을 두 번 클릭하거나 * 작업 환경 입력 * 을 클릭합니다.

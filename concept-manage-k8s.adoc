@@ -13,7 +13,10 @@ summary: Cloud Manager를 사용하여 Astra Trident를 설치하고, 스토리�
 :imagesdir: ./media/
 
 
-Cloud Manager를 사용하여 Astra Trident를 설치하고, 스토리지 클래스를 구성하고, 클러스터를 제거하고, 데이터 서비스를 활성화할 수 있습니다.
+Cloud Manager를 사용하여 Astra Trident를 설치 또는 업그레이드하고, 스토리지 클래스를 구성하고, 클러스터를 제거하고, 데이터 서비스를 활성화할 수 있습니다.
+
+
+NOTE: tridentctl을 사용하여 배포된 Astra Trident는 지원되지 않습니다. 'tridentctl'을 사용하여 Astra Trident를 구축한 경우 Cloud Manager를 사용하여 Kubernetes 클러스터를 관리할 수 없습니다. 반드시 해야 합니다 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["tridentctl을 사용하여 제거합니다"^] 다시 설치합니다 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident 연산자 사용"^] 또는 link:./tasks/task-k8s-manage-trident.html["Using Cloud Manager를 참조하십시오"].
 
 
 
@@ -26,7 +29,7 @@ image:screenshot-k8s-resource-page.png["클러스터에 대한 세부 정보를 
 리소스 페이지에서 다음을 수행할 수 있습니다.
 
 * Kubernetes 클러스터 상태를 봅니다.
-* Astra Trident가 설치되었는지 확인합니다. 을 참조하십시오 link:./task/task-k8s-manage-trident.html["Astra Trident를 설치합니다"].
+* 호환되는 Astra Trident 버전이 설치되었는지 확인하거나 최신 버전의 Astra Trident로 업그레이드하십시오. 을 참조하십시오 link:./task/task-k8s-manage-trident.html["Astra Trident를 설치합니다"].
 * 스토리지 클래스를 추가 및 제거합니다. 을 참조하십시오 link:./task/task-k8s-manage-storage-classes.html["스토리지 클래스를 관리합니다"].
 * 영구 볼륨 보기 을 참조하십시오 link:./task/task-k8s-manage-persistent-volumes.html["영구 볼륨 보기"].
 * 작업 공간에서 Kubernetes 클러스터를 제거합니다. 을 참조하십시오 link:./task/task-k8s-manage-remove-cluster.html["클러스터를 제거합니다"].
