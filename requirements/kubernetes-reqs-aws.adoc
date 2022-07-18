@@ -76,7 +76,7 @@ image:screenshot-aws-edit-policy.png["권한 탭의 정책 편집 버튼을 보�
 
 
 +
-https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.13.json["정책의 전체 JSON 형식을 봅니다"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["정책의 전체 JSON 형식을 봅니다"^]
 
 . 정책 검토 * 를 클릭한 다음 * 변경 사항 저장 * 을 클릭합니다.
 
